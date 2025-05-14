@@ -1,3368 +1,2593 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="uz@Cyrl" version="2.1">
-<context>
-    <name>AboutDialog</name>
-    <message>
-        <source>About Bitcoin Core</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>&lt;b&gt;Bitcoin Core&lt;/b&gt; version</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>
-This is experimental software.
-
-Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php.
-
-This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit (http://www.openssl.org/) and cryptographic software written by Eric Young (eay@cryptsoft.com) and UPnP software written by Thomas Bernard.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Copyright</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>The Bitcoin Core developers</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>(%1-bit)</source>
-        <translation type="unfinished"/>
-    </message>
-</context>
+<TS version="2.1" language="uz@Cyrl">
 <context>
     <name>AddressBookPage</name>
     <message>
-        <source>Double-click to edit address or label</source>
-        <translation type="unfinished"/>
+        <source>Right-click to edit address or label</source>
+        <translation type="unfinished">Манзил ёки ёрлиқни таҳрирлаш учун икки марта босинг</translation>
     </message>
     <message>
         <source>Create a new address</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Янги манзил яратинг</translation>
     </message>
     <message>
         <source>&amp;New</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">&amp;Янги</translation>
     </message>
     <message>
         <source>Copy the currently selected address to the system clipboard</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Жорий танланган манзилни тизим вақтинчалик хотирасига нусха кўчиринг</translation>
     </message>
     <message>
         <source>&amp;Copy</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">&amp;Нусха олиш</translation>
     </message>
     <message>
         <source>C&amp;lose</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>&amp;Copy Address</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">&amp;Ёпиш</translation>
     </message>
     <message>
         <source>Delete the currently selected address from the list</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Жорий танланган манзилни рўйхатдан ўчириш</translation>
+    </message>
+    <message>
+        <source>Enter address or label to search</source>
+        <translation type="unfinished">Излаш учун манзил ёки ёрлиқни киритинг</translation>
     </message>
     <message>
         <source>Export the data in the current tab to a file</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Жорий ички ойна ичидаги маълумотларни файлга экспорт қилиш</translation>
     </message>
     <message>
         <source>&amp;Export</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">&amp;Экспорт</translation>
     </message>
     <message>
         <source>&amp;Delete</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">&amp;Ўчириш</translation>
     </message>
     <message>
         <source>Choose the address to send coins to</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Тангаларни жўнатиш учун манзилни танланг</translation>
     </message>
     <message>
         <source>Choose the address to receive coins with</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Тангаларни қабул қилиш учун манзилни танланг</translation>
     </message>
     <message>
         <source>C&amp;hoose</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Sending addresses</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Receiving addresses</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">&amp;Танлаш</translation>
     </message>
     <message>
         <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Улар тўловларни жўнатиш учун сизнинг Bitcoin манзилларингиз. Доимо тангаларни жўнатишдан олдин сумма ва қабул қилувчи манзилни текшириб кўринг. </translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation type="unfinished"/>
+        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
+Signing is only possible with addresses of the type 'legacy'.</source>
+        <translation type="unfinished">Улар тўловларни қабул қилиш учун сизнинг Bitcoin манзилларингиз. Янги манзилларни яратиш учун қабул қилиш варағидаги "Янги қабул қилиш манзилини яратиш" устига босинг. 
+Фақат 'legacy' туридаги манзиллар билан ҳисобга кириш мумкин.</translation>
+    </message>
+    <message>
+        <source>&amp;Copy Address</source>
+        <translation type="unfinished">Манзилдан &amp;нусха олиш</translation>
     </message>
     <message>
         <source>Copy &amp;Label</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Нусха олиш ва ёрлиқ</translation>
     </message>
     <message>
         <source>&amp;Edit</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">&amp;Таҳрирлаш</translation>
     </message>
     <message>
         <source>Export Address List</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Манзил рўйхатини экспорт қилиш</translation>
     </message>
     <message>
-        <source>Comma separated file (*.csv)</source>
-        <translation type="unfinished"/>
+        <source>Comma separated file</source>
+        <extracomment>Expanded name of the CSV file format. See: https://en.wikipedia.org/wiki/Comma-separated_values.</extracomment>
+        <translation type="unfinished">Вергул билан ажратилган файл</translation>
+    </message>
+    <message>
+        <source>There was an error trying to save the address list to %1. Please try again.</source>
+        <extracomment>An error message. %1 is a stand-in argument for the name of the file we attempted to save to.</extracomment>
+        <translation type="unfinished">Манзил рўйхатини %1.га сақлашда хатолик юз берди. Яна уриниб кўринг.</translation>
     </message>
     <message>
         <source>Exporting Failed</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>There was an error trying to save the address list to %1.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Экспорт қилиб бўлмади</translation>
     </message>
 </context>
 <context>
     <name>AddressTableModel</name>
     <message>
         <source>Label</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Ёрлиқ</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Манзил</translation>
     </message>
     <message>
         <source>(no label)</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">(Ёрлиқ мавжуд эмас)</translation>
     </message>
 </context>
 <context>
     <name>AskPassphraseDialog</name>
     <message>
         <source>Passphrase Dialog</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Махфий сўз ойнаси</translation>
     </message>
     <message>
         <source>Enter passphrase</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Махфий сўзни киритинг</translation>
     </message>
     <message>
         <source>New passphrase</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Янги махфий сўз</translation>
     </message>
     <message>
         <source>Repeat new passphrase</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Янги махфий сўзни такрорланг</translation>
     </message>
     <message>
-        <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;10 or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
-        <translation type="unfinished"/>
+        <source>Show passphrase</source>
+        <translation type="unfinished">Махфий сўзни кўрсатиш</translation>
     </message>
     <message>
         <source>Encrypt wallet</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Ҳамённи шифрлаш</translation>
     </message>
     <message>
         <source>This operation needs your wallet passphrase to unlock the wallet.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Ушбу операцияни амалга ошириш учун ҳамённи қулфдан чиқариш махфий сўзини талаб қилади.</translation>
     </message>
     <message>
         <source>Unlock wallet</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>This operation needs your wallet passphrase to decrypt the wallet.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Decrypt wallet</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Ҳамённи қулфдан чиқариш</translation>
     </message>
     <message>
         <source>Change passphrase</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Enter the old and new passphrase to the wallet.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Махфий сузни узгартириш</translation>
     </message>
     <message>
         <source>Confirm wallet encryption</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Ҳамённи кодлашни тасдиқлаш</translation>
     </message>
     <message>
         <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Диққат: Агар сиз ҳамёнингизни кодласангиз ва махфий сўзингизни унутсангиз, сиз &lt;b&gt;БАРЧА BITCOIN ПУЛЛАРИНГИЗНИ ЙЎҚОТАСИЗ&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Warning: The Caps Lock key is on!</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Ҳамёнингизни кодлашни ростдан хоҳлайсизми?</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Ҳамён шифрланган</translation>
     </message>
     <message>
-        <source>Bitcoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
-        <translation type="unfinished"/>
+        <source>Enter the new passphrase for the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
+        <translation type="unfinished">Hamyon uchun yangi maxfiy so'zni kiriting. &lt;br/&gt;Iltimos, &lt;b&gt;10 va undan ortiq istalgan&lt;/b&gt; yoki &lt;b&gt;8 va undan ortiq so'zlardan&lt;/b&gt; iborat maxfiy so'zdan foydalaning.</translation>
+    </message>
+    <message>
+        <source>Enter the old passphrase and new passphrase for the wallet.</source>
+        <translation type="unfinished">Hamyonning oldingi va yangi maxfiy so'zlarini kiriting</translation>
+    </message>
+    <message>
+        <source>Continue</source>
+        <translation type="unfinished">Davom etish</translation>
+    </message>
+    <message>
+        <source>Back</source>
+        <translation type="unfinished">Orqaga </translation>
+    </message>
+    <message>
+        <source>Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
+        <translation type="unfinished">Shuni yodda tutingki, hamyonni shifrlash kompyuterdagi virus yoki zararli dasturlar sizning bitcoinlaringizni o'g'irlashidan to'liq himoyalay olmaydi.</translation>
+    </message>
+    <message>
+        <source>Wallet to be encrypted</source>
+        <translation type="unfinished">Шифрланадиган ҳамён</translation>
+    </message>
+    <message>
+        <source>Your wallet is about to be encrypted. </source>
+        <translation type="unfinished">Ҳамёнингиз шифрланиш арафасида.</translation>
+    </message>
+    <message>
+        <source>Your wallet is now encrypted. </source>
+        <translation type="unfinished">Ҳамёнингиз энди шифрланади.</translation>
+    </message>
+    <message>
+        <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
+        <translation type="unfinished">МУҲИМ: Сиз қилган олдинги ҳамён файли заҳиралари янги яратилган, кодланган ҳамён файли билан алмаштирилиши керак. Хавфсизлик сабабларига кўра олдинги кодланган ҳамён файли заҳираси янги кодланган ҳамёндан фойдаланишингиз билан яроқсиз ҳолга келади.</translation>
     </message>
     <message>
         <source>Wallet encryption failed</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Ҳамённи кодлаш амалга ошмади</translation>
     </message>
     <message>
         <source>Wallet encryption failed due to an internal error. Your wallet was not encrypted.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Ҳамённи кодлаш ташқи хато туфайли амалга ошмади. Ҳамёнингиз кодланмади.</translation>
     </message>
     <message>
         <source>The supplied passphrases do not match.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Киритилган пароллар мос келмади.</translation>
     </message>
     <message>
         <source>Wallet unlock failed</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Ҳамённи қулфдан чиқариш амалга ошмади</translation>
     </message>
     <message>
         <source>The passphrase entered for the wallet decryption was incorrect.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Ҳамённи коддан чиқариш учун киритилган парол нотўғри.</translation>
     </message>
     <message>
-        <source>Wallet decryption failed</source>
-        <translation type="unfinished"/>
+        <source>The passphrase entered for the wallet decryption is incorrect. It contains a null character (ie - a zero byte). If the passphrase was set with a version of this software prior to 25.0, please try again with only the characters up to — but not including — the first null character. If this is successful, please set a new passphrase to avoid this issue in the future.</source>
+        <translation type="unfinished">Hamyon shifrini ochish uchun parol iborasi noto'g'ri. U null belgini o'z ichiga oladi (ya'ni - nol bayt). Agar parol iborasi ushbu dasturiy ta'minotning 25.0 dan oldingi versiyasida o'rnatilgan bo'lsa, iltimos, faqat birinchi null belgigacha bo'lgan qurilmalar bilan qayta urinib ko'ring (lekin shu narsa emas). Agar bu voqea bo'lsa, bu muammoni olish uchun yangi parol o'rnating.
+</translation>
     </message>
     <message>
         <source>Wallet passphrase was successfully changed.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Ҳамён пароли муваффақиятли алмаштирилди.</translation>
+    </message>
+    <message>
+        <source>The old passphrase entered for the wallet decryption is incorrect. It contains a null character (ie - a zero byte). If the passphrase was set with a version of this software prior to 25.0, please try again with only the characters up to — but not including — the first null character.</source>
+        <translation type="unfinished">Hamyon shifrini ochish uchun yordam eski parol noto'g'ri. U null belgini o'z ichiga oladi (ya'ni - nol bayt). Agar parol iborasi ushbu dasturiy ta'minotning 25.0 dan oldingi versiyasida o'rnatilgan bo'lsa, iltimos, faqat birinchi null belgigacha bo'lgan qurilmalar bilan qayta urinib ko'ring (lekin shu narsa emas).</translation>
+    </message>
+    <message>
+        <source>Warning: The Caps Lock key is on!</source>
+        <translation type="unfinished">Диққат: Caps Lock тугмаси ёқилган!</translation>
+    </message>
+</context>
+<context>
+    <name>BanTableModel</name>
+    <message>
+        <source>Banned Until</source>
+        <translation type="unfinished">gacha kirish taqiqlanadi</translation>
+    </message>
+</context>
+<context>
+    <name>BitcoinApplication</name>
+    <message>
+        <source>Runaway exception</source>
+        <translation type="unfinished">qo'shimcha istisno</translation>
+    </message>
+    <message>
+        <source>A fatal error occurred. %1 can no longer continue safely and will quit.</source>
+        <translation type="unfinished">Fatal xatolik yuz berdi. %1 xavfsiz ravishda davom eta olmaydi va tizimni tark etadi. </translation>
+    </message>
+    <message>
+        <source>Internal error</source>
+        <translation type="unfinished">Ichki xatolik</translation>
+    </message>
+    <message>
+        <source>An internal error occurred. %1 will attempt to continue safely. This is an unexpected bug which can be reported as described below.</source>
+        <translation type="unfinished">Ichki xatolik yuzaga keldi. %1 xavfsiz protsessni davom ettirishga harakat qiladi. Bu kutilmagan xato boʻlib, uni quyida tavsiflanganidek xabar qilish mumkin.</translation>
+    </message>
+</context>
+<context>
+    <name>QObject</name>
+    <message>
+        <source>Do you want to reset settings to default values, or to abort without making changes?</source>
+        <extracomment>Explanatory text shown on startup when the settings file cannot be read. Prompts user to make a choice between resetting or aborting.</extracomment>
+        <translation type="unfinished">Sozlamalarni asliga qaytarishni xohlaysizmi yoki o'zgartirishlar saqlanmasinmi?</translation>
+    </message>
+    <message>
+        <source>A fatal error occurred. Check that settings file is writable, or try running with -nosettings.</source>
+        <extracomment>Explanatory text shown on startup when the settings file could not be written. Prompts user to check that we have the ability to write to the file. Explains that the user has the option of running without a settings file.</extracomment>
+        <translation type="unfinished">Fatal xatolik yuz berdi. Sozlamalar fayli tahrirlashga yaroqliligini tekshiring yoki -nosettings bilan davom etishga harakat qiling.</translation>
+    </message>
+    <message>
+        <source>Error: %1</source>
+        <translation type="unfinished">Xatolik: %1</translation>
+    </message>
+    <message>
+        <source>%1 didn't yet exit safely…</source>
+        <translation type="unfinished">%1 hali tizimni xavfsiz ravishda tark etgani yo'q...</translation>
+    </message>
+    <message>
+        <source>unknown</source>
+        <translation type="unfinished">Номаълум</translation>
+    </message>
+    <message>
+        <source>Amount</source>
+        <translation type="unfinished">Миқдори</translation>
+    </message>
+    <message>
+        <source>Enter a Bitcoin address (e.g. %1)</source>
+        <translation type="unfinished">Bitcoin манзилини киритинг (масалан.  %1)</translation>
+    </message>
+    <message>
+        <source>Inbound</source>
+        <extracomment>An inbound connection from a peer. An inbound connection is a connection initiated by a peer.</extracomment>
+        <translation type="unfinished">Ички йўналиш</translation>
+    </message>
+    <message>
+        <source>Outbound</source>
+        <extracomment>An outbound connection to a peer. An outbound connection is a connection initiated by us.</extracomment>
+        <translation type="unfinished">Ташқи йўналиш</translation>
+    </message>
+    <message>
+        <source>%1 m</source>
+        <translation type="unfinished">%1 д</translation>
+    </message>
+    <message>
+        <source>%1 s</source>
+        <translation type="unfinished">%1 с</translation>
+    </message>
+    <message>
+        <source>None</source>
+        <translation type="unfinished">Йўқ</translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation type="unfinished">Тўғри келмайди</translation>
+    </message>
+    <message>
+        <source>%1 ms</source>
+        <translation type="unfinished">%1 мс</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n second(s)</source>
+        <translation type="unfinished">
+            <numerusform />
+            <numerusform />
+        </translation>
+    </message>
+    <message numerus="yes">
+        <source>%n minute(s)</source>
+        <translation type="unfinished">
+            <numerusform />
+            <numerusform />
+        </translation>
+    </message>
+    <message numerus="yes">
+        <source>%n hour(s)</source>
+        <translation type="unfinished">
+            <numerusform />
+            <numerusform />
+        </translation>
+    </message>
+    <message numerus="yes">
+        <source>%n day(s)</source>
+        <translation type="unfinished">
+            <numerusform />
+            <numerusform />
+        </translation>
+    </message>
+    <message numerus="yes">
+        <source>%n week(s)</source>
+        <translation type="unfinished">
+            <numerusform />
+            <numerusform />
+        </translation>
+    </message>
+    <message>
+        <source>%1 and %2</source>
+        <translation type="unfinished">%1 ва %2</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n year(s)</source>
+        <translation type="unfinished">
+            <numerusform />
+            <numerusform />
+        </translation>
+    </message>
+    <message>
+        <source>%1 B</source>
+        <translation type="unfinished">%1 Б</translation>
+    </message>
+    <message>
+        <source>%1 MB</source>
+        <translation type="unfinished">%1 МБ</translation>
+    </message>
+    <message>
+        <source>%1 GB</source>
+        <translation type="unfinished">%1 ГБ</translation>
+    </message>
+    <message>
+        <source>default wallet</source>
+        <translation type="unfinished">standart hamyon</translation>
     </message>
 </context>
 <context>
     <name>BitcoinGUI</name>
     <message>
-        <source>Sign &amp;message...</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Synchronizing with network...</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
         <source>&amp;Overview</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Node</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">&amp;Кўриб чиқиш</translation>
     </message>
     <message>
         <source>Show general overview of wallet</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Ҳамённинг умумий кўринишини кўрсатиш</translation>
     </message>
     <message>
         <source>&amp;Transactions</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">&amp;Пул ўтказмалари</translation>
     </message>
     <message>
         <source>Browse transaction history</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Пул ўтказмалари тарихини кўриш</translation>
     </message>
     <message>
         <source>E&amp;xit</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Ч&amp;иқиш</translation>
     </message>
     <message>
         <source>Quit application</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Иловадан чиқиш</translation>
     </message>
     <message>
-        <source>Show information about Bitcoin</source>
-        <translation type="unfinished"/>
+        <source>&amp;About %1</source>
+        <translation type="unfinished">&amp;%1 haqida</translation>
+    </message>
+    <message>
+        <source>Show information about %1</source>
+        <translation type="unfinished">%1 haqida axborotni ko'rsatish</translation>
     </message>
     <message>
         <source>About &amp;Qt</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">&amp;Qt ҳақида</translation>
     </message>
     <message>
         <source>Show information about Qt</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Qt ҳақидаги маълумотларни кўрсатиш</translation>
     </message>
     <message>
-        <source>&amp;Options...</source>
-        <translation type="unfinished"/>
+        <source>Modify configuration options for %1</source>
+        <translation type="unfinished">%1 konfiguratsiya sozlamalarini o'zgartirish</translation>
     </message>
     <message>
-        <source>&amp;Encrypt Wallet...</source>
-        <translation type="unfinished"/>
+        <source>Create a new wallet</source>
+        <translation type="unfinished">Yangi hamyon yaratish</translation>
     </message>
     <message>
-        <source>&amp;Backup Wallet...</source>
-        <translation type="unfinished"/>
+        <source>&amp;Minimize</source>
+        <translation type="unfinished">&amp;Kichraytirish</translation>
     </message>
     <message>
-        <source>&amp;Change Passphrase...</source>
-        <translation type="unfinished"/>
+        <source>Wallet:</source>
+        <translation type="unfinished">Hamyon</translation>
     </message>
     <message>
-        <source>&amp;Sending addresses...</source>
-        <translation type="unfinished"/>
+        <source>Network activity disabled.</source>
+        <extracomment>A substring of the tooltip.</extracomment>
+        <translation type="unfinished">Mobil tarmoq faoliyati o'chirilgan</translation>
     </message>
     <message>
-        <source>&amp;Receiving addresses...</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Open &amp;URI...</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Importing blocks from disk...</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Reindexing blocks on disk...</source>
-        <translation type="unfinished"/>
+        <source>Proxy is &lt;b&gt;enabled&lt;/b&gt;: %1</source>
+        <translation type="unfinished">Proksi &lt;b&gt;yoqildi&lt;/b&gt;: %1</translation>
     </message>
     <message>
         <source>Send coins to a Bitcoin address</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Modify configuration options for Bitcoin</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Тангаларни Bitcoin манзилига жўнатиш</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Ҳамённи бошқа манзилга заҳиралаш</translation>
     </message>
     <message>
         <source>Change the passphrase used for wallet encryption</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>&amp;Debug window</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Open debugging and diagnostic console</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>&amp;Verify message...</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Bitcoin</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Wallet</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Паролни ўзгартириш ҳамённи кодлашда фойдаланилади</translation>
     </message>
     <message>
         <source>&amp;Send</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">&amp;Жўнатиш</translation>
     </message>
     <message>
         <source>&amp;Receive</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">&amp;Қабул қилиш</translation>
     </message>
     <message>
-        <source>&amp;Show / Hide</source>
-        <translation type="unfinished"/>
+        <source>&amp;Options…</source>
+        <translation type="unfinished">&amp;Sozlamalar...</translation>
     </message>
     <message>
-        <source>Show or hide the main Window</source>
-        <translation type="unfinished"/>
+        <source>&amp;Encrypt Wallet…</source>
+        <translation type="unfinished">&amp;Hamyonni shifrlash...</translation>
     </message>
     <message>
         <source>Encrypt the private keys that belong to your wallet</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Ҳамёнингизга тегишли махфий калитларни кодлаш</translation>
+    </message>
+    <message>
+        <source>&amp;Backup Wallet…</source>
+        <translation type="unfinished">&amp;Hamyon nusxasi...</translation>
+    </message>
+    <message>
+        <source>&amp;Change Passphrase…</source>
+        <translation type="unfinished">&amp;Maxfiy so'zni o'zgartirish...</translation>
+    </message>
+    <message>
+        <source>Sign &amp;message…</source>
+        <translation type="unfinished">Xabarni &amp;signlash...</translation>
     </message>
     <message>
         <source>Sign messages with your Bitcoin addresses to prove you own them</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Bitcoin манзилидан унинг эгаси эканлигингизни исботлаш учун хабарлар ёзинг</translation>
+    </message>
+    <message>
+        <source>&amp;Verify message…</source>
+        <translation type="unfinished">&amp;Xabarni tasdiqlash...</translation>
     </message>
     <message>
         <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Хабарларни махсус Bitcoin манзилларингиз билан ёзилганлигига ишонч ҳосил қилиш учун уларни тасдиқланг</translation>
+    </message>
+    <message>
+        <source>&amp;Load PSBT from file…</source>
+        <translation type="unfinished">&amp;PSBT ni fayldan yuklash...</translation>
+    </message>
+    <message>
+        <source>Open &amp;URI…</source>
+        <translation type="unfinished">&amp;URL manzilni ochish</translation>
+    </message>
+    <message>
+        <source>Close Wallet…</source>
+        <translation type="unfinished">Hamyonni yopish</translation>
+    </message>
+    <message>
+        <source>Create Wallet…</source>
+        <translation type="unfinished">Hamyonni yaratish...</translation>
+    </message>
+    <message>
+        <source>Close All Wallets…</source>
+        <translation type="unfinished">Barcha hamyonlarni yopish...</translation>
     </message>
     <message>
         <source>&amp;File</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">&amp;Файл</translation>
     </message>
     <message>
         <source>&amp;Settings</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">&amp; Созламалар</translation>
     </message>
     <message>
         <source>&amp;Help</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">&amp;Ёрдам</translation>
     </message>
     <message>
         <source>Tabs toolbar</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Ички ойналар асбоблар панели</translation>
     </message>
     <message>
-        <source>[testnet]</source>
-        <translation type="unfinished"/>
+        <source>Syncing Headers (%1%)…</source>
+        <translation type="unfinished">Sarlavhalar sinxronlashtirilmoqda (%1%)...</translation>
     </message>
     <message>
-        <source>Bitcoin Core</source>
-        <translation type="unfinished"/>
+        <source>Synchronizing with network…</source>
+        <translation type="unfinished">Internet bilan sinxronlash...</translation>
+    </message>
+    <message>
+        <source>Indexing blocks on disk…</source>
+        <translation type="unfinished">Diskdagi bloklarni indekslash...</translation>
+    </message>
+    <message>
+        <source>Processing blocks on disk…</source>
+        <translation type="unfinished">Diskdagi bloklarni protsesslash...</translation>
+    </message>
+    <message>
+        <source>Connecting to peers…</source>
+        <translation type="unfinished">Pirlarga ulanish...</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and bitcoin: URIs)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>&amp;About Bitcoin Core</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Тўловлар (QR кодлари ва bitcoin ёрдамида яратишлар: URI’лар) сўраш</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Фойдаланилган жўнатилган манзиллар ва ёрлиқлар рўйхатини кўрсатиш</translation>
     </message>
     <message>
         <source>Show the list of used receiving addresses and labels</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Open a bitcoin: URI or payment request</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Фойдаланилган қабул қилинган манзиллар ва ёрлиқлар рўйхатини кўрсатиш</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Show the Bitcoin Core help message to get a list with possible Bitcoin command-line options</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Bitcoin client</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">&amp;Буйруқлар сатри мосламалари</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Bitcoin network</source>
-        <translation type="unfinished"><numerusform></numerusform></translation>
-    </message>
-    <message>
-        <source>No block source available...</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Processed %1 of %2 (estimated) blocks of transaction history.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Processed %1 blocks of transaction history.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message numerus="yes">
-        <source>%n hour(s)</source>
-        <translation type="unfinished"><numerusform></numerusform></translation>
-    </message>
-    <message numerus="yes">
-        <source>%n day(s)</source>
-        <translation type="unfinished"><numerusform></numerusform></translation>
-    </message>
-    <message numerus="yes">
-        <source>%n week(s)</source>
-        <translation type="unfinished"><numerusform></numerusform></translation>
-    </message>
-    <message>
-        <source>%1 and %2</source>
-        <translation type="unfinished"/>
-    </message>
-    <message numerus="yes">
-        <source>%n year(s)</source>
-        <translation type="unfinished"><numerusform></numerusform></translation>
+        <source>Processed %n block(s) of transaction history.</source>
+        <translation type="unfinished">
+            <numerusform>Tranzaksiya tarixining %n blok(lar)i qayta ishlandi.</numerusform>
+            <numerusform />
+        </translation>
     </message>
     <message>
         <source>%1 behind</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">%1 орқада</translation>
+    </message>
+    <message>
+        <source>Catching up…</source>
+        <translation type="unfinished">Yetkazilmoqda...</translation>
     </message>
     <message>
         <source>Last received block was generated %1 ago.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Сўнги қабул қилинган блок %1 олдин яратилган.</translation>
     </message>
     <message>
         <source>Transactions after this will not yet be visible.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Бундан кейинги пул ўтказмалари кўринмайдиган бўлади.</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Хатолик</translation>
     </message>
     <message>
         <source>Warning</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Диққат</translation>
     </message>
     <message>
         <source>Information</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Маълумот</translation>
     </message>
     <message>
         <source>Up to date</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Янгиланган</translation>
     </message>
     <message>
-        <source>Catching up...</source>
-        <translation type="unfinished"/>
+        <source>Load Partially Signed Bitcoin Transaction</source>
+        <translation type="unfinished">Qisman signlangan Bitkoin tranzaksiyasini yuklash</translation>
     </message>
     <message>
-        <source>Sent transaction</source>
-        <translation type="unfinished"/>
+        <source>Load PSBT from &amp;clipboard…</source>
+        <translation type="unfinished">&amp;Nusxalanganlar dan PSBT ni yuklash</translation>
     </message>
     <message>
-        <source>Incoming transaction</source>
-        <translation type="unfinished"/>
+        <source>Load Partially Signed Bitcoin Transaction from clipboard</source>
+        <translation type="unfinished">Nusxalanganlar qisman signlangan Bitkoin tranzaksiyalarini yuklash</translation>
+    </message>
+    <message>
+        <source>Node window</source>
+        <translation type="unfinished">Node oynasi</translation>
+    </message>
+    <message>
+        <source>Open node debugging and diagnostic console</source>
+        <translation type="unfinished">Node debuglash va tahlil konsolini ochish</translation>
+    </message>
+    <message>
+        <source>&amp;Sending addresses</source>
+        <translation type="unfinished">&amp;Yuborish manzillari</translation>
+    </message>
+    <message>
+        <source>&amp;Receiving addresses</source>
+        <translation type="unfinished">&amp;Qabul qilish manzillari</translation>
+    </message>
+    <message>
+        <source>Open a bitcoin: URI</source>
+        <translation type="unfinished">Bitkoinni ochish: URI</translation>
+    </message>
+    <message>
+        <source>Open Wallet</source>
+        <translation type="unfinished">Hamyonni ochish</translation>
+    </message>
+    <message>
+        <source>Open a wallet</source>
+        <translation type="unfinished">Hamyonni ochish</translation>
+    </message>
+    <message>
+        <source>Close wallet</source>
+        <translation type="unfinished">Hamyonni yopish</translation>
+    </message>
+    <message>
+        <source>Restore Wallet…</source>
+        <extracomment>Name of the menu item that restores wallet from a backup file.</extracomment>
+        <translation type="unfinished">Hamyonni tiklash</translation>
+    </message>
+    <message>
+        <source>Restore a wallet from a backup file</source>
+        <extracomment>Status tip for Restore Wallet menu item</extracomment>
+        <translation type="unfinished">Zahira faylidan hamyonni tiklash</translation>
+    </message>
+    <message>
+        <source>Close all wallets</source>
+        <translation type="unfinished">Barcha hamyonlarni yopish</translation>
+    </message>
+    <message>
+        <source>Migrate Wallet</source>
+        <translation type="unfinished">dudlangan cho'chqa go'shti koʻchirish</translation>
+    </message>
+    <message>
+        <source>Migrate a wallet</source>
+        <translation type="unfinished">Hamyonni koʻchiring</translation>
+    </message>
+    <message>
+        <source>Show the %1 help message to get a list with possible Bitcoin command-line options</source>
+        <translation type="unfinished">Yozilishi mumkin bo'lgan command-line sozlamalar ro'yxatini olish uchun %1 yordam xabarini ko'rsatish</translation>
+    </message>
+    <message>
+        <source>Mask the values in the Overview tab</source>
+        <translation type="unfinished">Umumiy ko'rinish menyusidagi qiymatlarni maskirovka qilish</translation>
+    </message>
+    <message>
+        <source>No wallets available</source>
+        <translation type="unfinished">Hamyonlar mavjud emas</translation>
+    </message>
+    <message>
+        <source>Wallet Data</source>
+        <extracomment>Name of the wallet data file format.</extracomment>
+        <translation type="unfinished">Hamyon maʼlumotlari</translation>
+    </message>
+    <message>
+        <source>Load Wallet Backup</source>
+        <extracomment>The title for Restore Wallet File Windows</extracomment>
+        <translation type="unfinished">Hamyon zahira nusxasini yuklang</translation>
+    </message>
+    <message>
+        <source>Restore Wallet</source>
+        <extracomment>Title of pop-up window shown when the user is attempting to restore a wallet.</extracomment>
+        <translation type="unfinished">Hamyonni tiklash</translation>
+    </message>
+    <message>
+        <source>Wallet Name</source>
+        <extracomment>Label of the input field where the name of the wallet is entered.</extracomment>
+        <translation type="unfinished">Hamyon nomi</translation>
+    </message>
+    <message>
+        <source>&amp;Window</source>
+        <translation type="unfinished">&amp;Ойна</translation>
+    </message>
+    <message>
+        <source>Zoom</source>
+        <translation type="unfinished">Kattalashtirish</translation>
+    </message>
+    <message>
+        <source>Main Window</source>
+        <translation type="unfinished">Asosiy Oyna</translation>
+    </message>
+    <message>
+        <source>%1 client</source>
+        <translation type="unfinished">%1 mijoz </translation>
+    </message>
+    <message>
+        <source>&amp;Hide</source>
+        <translation type="unfinished">&amp;Yashirish</translation>
+    </message>
+    <message>
+        <source>S&amp;how</source>
+        <translation type="unfinished">Ko'&amp;rsatish</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n active connection(s) to Bitcoin network.</source>
+        <extracomment>A substring of the tooltip.</extracomment>
+        <translation type="unfinished">
+            <numerusform>Bitkoin tarmog'iga %n aktiv ulanishlar.</numerusform>
+            <numerusform />
+        </translation>
+    </message>
+    <message>
+        <source>Click for more actions.</source>
+        <extracomment>A substring of the tooltip. "More actions" are available via the context menu.</extracomment>
+        <translation type="unfinished">Ko'proq sozlamalar uchun bosing.</translation>
+    </message>
+    <message>
+        <source>Show Peers tab</source>
+        <extracomment>A context menu item. The "Peers tab" is an element of the "Node window".</extracomment>
+        <translation type="unfinished">Pirlar oynasini ko'rsatish</translation>
+    </message>
+    <message>
+        <source>Disable network activity</source>
+        <extracomment>A context menu item.</extracomment>
+        <translation type="unfinished">Ijtimoiy tarmoq faoliyatini cheklash</translation>
+    </message>
+    <message>
+        <source>Enable network activity</source>
+        <extracomment>A context menu item. The network activity was disabled previously.</extracomment>
+        <translation type="unfinished">Ijtimoiy tarmoq faoliyatini yoqish</translation>
+    </message>
+    <message>
+        <source>Error: %1</source>
+        <translation type="unfinished">Xatolik: %1</translation>
+    </message>
+    <message>
+        <source>Warning: %1</source>
+        <translation type="unfinished">Ogohlantirish: %1</translation>
     </message>
     <message>
         <source>Date: %1
-Amount: %2
-Type: %3
-Address: %4
 </source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Sana: %1
+</translation>
+    </message>
+    <message>
+        <source>Amount: %1
+</source>
+        <translation type="unfinished">Miqdor: %1
+</translation>
+    </message>
+    <message>
+        <source>Wallet: %1
+</source>
+        <translation type="unfinished">Hamyon: %1
+</translation>
+    </message>
+    <message>
+        <source>Type: %1
+</source>
+        <translation type="unfinished">Tip: %1
+</translation>
+    </message>
+    <message>
+        <source>Label: %1
+</source>
+        <translation type="unfinished">Yorliq: %1
+</translation>
+    </message>
+    <message>
+        <source>Address: %1
+</source>
+        <translation type="unfinished">Manzil: %1
+</translation>
+    </message>
+    <message>
+        <source>Sent transaction</source>
+        <translation type="unfinished">Жўнатилган операция</translation>
+    </message>
+    <message>
+        <source>Incoming transaction</source>
+        <translation type="unfinished">Кирувчи операция</translation>
+    </message>
+    <message>
+        <source>HD key generation is &lt;b&gt;enabled&lt;/b&gt;</source>
+        <translation type="unfinished">HD kalit yaratish &lt;b&gt;yoqilgan&lt;/b&gt;</translation>
+    </message>
+    <message>
+        <source>HD key generation is &lt;b&gt;disabled&lt;/b&gt;</source>
+        <translation type="unfinished">HD kalit yaratish &lt;b&gt;imkonsiz&lt;/b&gt;</translation>
+    </message>
+    <message>
+        <source>Private key &lt;b&gt;disabled&lt;/b&gt;</source>
+        <translation type="unfinished">Maxfiy kalit &lt;b&gt;o'chiq&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Ҳамён &lt;b&gt;кодланган&lt;/b&gt; ва вақтинча &lt;b&gt;қулфдан чиқарилган&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Ҳамён &lt;b&gt;кодланган&lt;/b&gt; ва вақтинча &lt;b&gt;қулфланган&lt;/b&gt;</translation>
     </message>
     <message>
-        <source>A fatal error occurred. Bitcoin can no longer continue safely and will quit.</source>
-        <translation type="unfinished"/>
+        <source>Original message:</source>
+        <translation type="unfinished">Asl xabar:</translation>
     </message>
 </context>
 <context>
-    <name>ClientModel</name>
+    <name>UnitDisplayStatusBarControl</name>
     <message>
-        <source>Network Alert</source>
-        <translation type="unfinished"/>
+        <source>Unit to show amounts in. Click to select another unit.</source>
+        <translation type="unfinished">Miqdorlarni ko'rsatish birligi. Boshqa birlik tanlash uchun bosing.</translation>
     </message>
 </context>
 <context>
     <name>CoinControlDialog</name>
     <message>
-        <source>Coin Control Address Selection</source>
-        <translation type="unfinished"/>
+        <source>Coin Selection</source>
+        <translation type="unfinished">Coin tanlash</translation>
     </message>
     <message>
         <source>Quantity:</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Сони:</translation>
     </message>
     <message>
         <source>Bytes:</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Байт:</translation>
     </message>
     <message>
         <source>Amount:</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Priority:</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Миқдори:</translation>
     </message>
     <message>
         <source>Fee:</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Low Output:</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Солиқ:</translation>
     </message>
     <message>
         <source>After Fee:</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Солиқдан сўнг:</translation>
     </message>
     <message>
         <source>Change:</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Ўзгартириш:</translation>
     </message>
     <message>
         <source>(un)select all</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">барчасини танаш (бекор қилиш)</translation>
     </message>
     <message>
         <source>Tree mode</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Дарахт усулида</translation>
     </message>
     <message>
         <source>List mode</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Рўйхат усулида</translation>
     </message>
     <message>
         <source>Amount</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Миқдори</translation>
     </message>
     <message>
-        <source>Address</source>
-        <translation type="unfinished"/>
+        <source>Received with label</source>
+        <translation type="unfinished">Yorliq orqali qabul qilingan</translation>
+    </message>
+    <message>
+        <source>Received with address</source>
+        <translation type="unfinished">Manzil orqali qabul qilingan</translation>
     </message>
     <message>
         <source>Date</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Сана</translation>
     </message>
     <message>
         <source>Confirmations</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Тасдиқлашлар</translation>
     </message>
     <message>
         <source>Confirmed</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Priority</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Copy address</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Copy label</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Тасдиқланди</translation>
     </message>
     <message>
         <source>Copy amount</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Кийматни нусхала</translation>
     </message>
     <message>
-        <source>Copy transaction ID</source>
-        <translation type="unfinished"/>
+        <source>&amp;Copy address</source>
+        <translation type="unfinished">&amp;Manzilni nusxalash</translation>
     </message>
     <message>
-        <source>Lock unspent</source>
-        <translation type="unfinished"/>
+        <source>Copy &amp;label</source>
+        <translation type="unfinished">&amp;Yorliqni nusxalash</translation>
     </message>
     <message>
-        <source>Unlock unspent</source>
-        <translation type="unfinished"/>
+        <source>Copy &amp;amount</source>
+        <translation type="unfinished">&amp;Miqdorni nusxalash</translation>
+    </message>
+    <message>
+        <source>Copy transaction &amp;ID and output index</source>
+        <translation type="unfinished">Tranzaksiya &amp;IDsi ni va chiquvchi indeksni nusxalash</translation>
+    </message>
+    <message>
+        <source>L&amp;ock unspent</source>
+        <translation type="unfinished">Sarflanmagan tranzaksiyalarni q&amp;ulflash</translation>
+    </message>
+    <message>
+        <source>&amp;Unlock unspent</source>
+        <translation type="unfinished">Sarflanmaqan tranzaksiyalarni &amp;qulfdan chiqarish</translation>
     </message>
     <message>
         <source>Copy quantity</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Нусха сони</translation>
     </message>
     <message>
         <source>Copy fee</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Нусха солиғи</translation>
     </message>
     <message>
         <source>Copy after fee</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Нусха солиқдан сўнг</translation>
     </message>
     <message>
         <source>Copy bytes</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Copy priority</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Copy low output</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Нусха байти</translation>
     </message>
     <message>
         <source>Copy change</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>highest</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>higher</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>high</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>medium-high</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>medium</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>low-medium</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>low</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>lower</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>lowest</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Нусха қайтими</translation>
     </message>
     <message>
         <source>(%1 locked)</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">(%1 қулфланган)</translation>
     </message>
     <message>
-        <source>none</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Dust</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>yes</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>no</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>This label turns red, if the transaction size is greater than 1000 bytes.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>This means a fee of at least %1 per kB is required.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Can vary +/- 1 byte per input.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Transactions with higher priority are more likely to get included into a block.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>This label turns red, if the priority is smaller than &quot;medium&quot;.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>This label turns red, if any recipient receives an amount smaller than %1.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>This means a fee of at least %1 is required.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Amounts below 0.546 times the minimum relay fee are shown as dust.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>This label turns red, if the change is smaller than %1.</source>
-        <translation type="unfinished"/>
+        <source>Can vary +/- %1 satoshi(s) per input.</source>
+        <translation type="unfinished">Ҳар бир кирим +/- %1 сатоши(лар) билан ўзгариши мумкин.</translation>
     </message>
     <message>
         <source>(no label)</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">(Ёрлиқ мавжуд эмас)</translation>
     </message>
     <message>
         <source>change from %1 (%2)</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">%1 (%2)дан ўзгартириш</translation>
     </message>
     <message>
         <source>(change)</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">(ўзгартириш)</translation>
+    </message>
+</context>
+<context>
+    <name>CreateWalletActivity</name>
+    <message>
+        <source>Create Wallet</source>
+        <extracomment>Title of window indicating the progress of creation of a new wallet.</extracomment>
+        <translation type="unfinished">Hamyon yaratish</translation>
+    </message>
+    <message>
+        <source>Creating Wallet &lt;b&gt;%1&lt;/b&gt;…</source>
+        <extracomment>Descriptive text of the create wallet progress window which indicates to the user which wallet is currently being created.</extracomment>
+        <translation type="unfinished">Hamyon yaratilmoqda &lt;b&gt;%1&lt;/b&gt;...</translation>
+    </message>
+    <message>
+        <source>Create wallet failed</source>
+        <translation type="unfinished">Hamyon yaratilishi amalga oshmadi</translation>
+    </message>
+    <message>
+        <source>Create wallet warning</source>
+        <translation type="unfinished">Hamyon yaratish ogohlantirishi</translation>
+    </message>
+    <message>
+        <source>Can't list signers</source>
+        <translation type="unfinished">Signerlarni ro'yxat shakliga keltirib bo'lmaydi</translation>
+    </message>
+    </context>
+<context>
+    <name>LoadWalletsActivity</name>
+    <message>
+        <source>Load Wallets</source>
+        <extracomment>Title of progress window which is displayed when wallets are being loaded.</extracomment>
+        <translation type="unfinished">Hamyonni yuklash</translation>
+    </message>
+    <message>
+        <source>Loading wallets…</source>
+        <extracomment>Descriptive text of the load wallets progress window which indicates to the user that wallets are currently being loaded.</extracomment>
+        <translation type="unfinished">Hamyonlar yuklanmoqda...</translation>
+    </message>
+</context>
+<context>
+    <name>MigrateWalletActivity</name>
+    <message>
+        <source>Migrate Wallet</source>
+        <translation type="unfinished">dudlangan cho'chqa go'shti koʻchirish</translation>
+    </message>
+    </context>
+<context>
+    <name>OpenWalletActivity</name>
+    <message>
+        <source>Open wallet failed</source>
+        <translation type="unfinished">Hamyonni ochib bo'lmaydi</translation>
+    </message>
+    <message>
+        <source>Open wallet warning</source>
+        <translation type="unfinished">Hamyonni ochish ogohlantirishi</translation>
+    </message>
+    <message>
+        <source>Open Wallet</source>
+        <extracomment>Title of window indicating the progress of opening of a wallet.</extracomment>
+        <translation type="unfinished">Ochiq hamyon</translation>
+    </message>
+    <message>
+        <source>Opening Wallet &lt;b&gt;%1&lt;/b&gt;…</source>
+        <extracomment>Descriptive text of the open wallet progress window which indicates to the user which wallet is currently being opened.</extracomment>
+        <translation type="unfinished">Hamyonni ochish &lt;b&gt;%1&lt;/b&gt;...</translation>
+    </message>
+</context>
+<context>
+    <name>RestoreWalletActivity</name>
+    <message>
+        <source>Restore Wallet</source>
+        <extracomment>Title of progress window which is displayed when wallets are being restored.</extracomment>
+        <translation type="unfinished">Hamyonni tiklash</translation>
+    </message>
+    </context>
+<context>
+    <name>WalletController</name>
+    <message>
+        <source>Close wallet</source>
+        <translation type="unfinished">Hamyonni yopish</translation>
+    </message>
+    <message>
+        <source>Are you sure you wish to close the wallet &lt;i&gt;%1&lt;/i&gt;?</source>
+        <translation type="unfinished">Ushbu hamyonni&lt;i&gt;%1&lt;/i&gt; yopmoqchi ekaningizga ishonchingiz komilmi?</translation>
+    </message>
+    <message>
+        <source>Closing the wallet for too long can result in having to resync the entire chain if pruning is enabled.</source>
+        <translation type="unfinished">Agar 'pruning' funksiyasi o'chirilgan bo'lsa, hamyondan uzoq vaqt foydalanmaslik butun zanjirnni qayta sinxronlashga olib kelishi mumkin.</translation>
+    </message>
+    <message>
+        <source>Close all wallets</source>
+        <translation type="unfinished">Barcha hamyonlarni yopish</translation>
+    </message>
+    <message>
+        <source>Are you sure you wish to close all wallets?</source>
+        <translation type="unfinished">Hamma hamyonlarni yopmoqchimisiz?</translation>
+    </message>
+</context>
+<context>
+    <name>CreateWalletDialog</name>
+    <message>
+        <source>Create Wallet</source>
+        <translation type="unfinished">Hamyon yaratish</translation>
+    </message>
+    <message>
+        <source>Wallet Name</source>
+        <translation type="unfinished">Hamyon nomi</translation>
+    </message>
+    <message>
+        <source>Wallet</source>
+        <translation type="unfinished">Ҳамён</translation>
+    </message>
+    <message>
+        <source>Encrypt the wallet. The wallet will be encrypted with a passphrase of your choice.</source>
+        <translation type="unfinished">Hamyonni shifrlash. Hamyon siz tanlagan maxfiy so'z bilan shifrlanadi</translation>
+    </message>
+    <message>
+        <source>Encrypt Wallet</source>
+        <translation type="unfinished">Hamyonni shifrlash</translation>
+    </message>
+    <message>
+        <source>Advanced Options</source>
+        <translation type="unfinished">Qo'shimcha sozlamalar</translation>
+    </message>
+    <message>
+        <source>Disable private keys for this wallet. Wallets with private keys disabled will have no private keys and cannot have an HD seed or imported private keys. This is ideal for watch-only wallets.</source>
+        <translation type="unfinished">Ushbu hamyon uchun maxfiy kalitlarni o'chirish. Maxfiy kalitsiz hamyonlar maxfiy kalitlar yoki import qilingan maxfiy kalitlar, shuningdek, HD seedlarga ega bo'la olmaydi.</translation>
+    </message>
+    <message>
+        <source>Disable Private Keys</source>
+        <translation type="unfinished">Maxfiy kalitlarni faolsizlantirish</translation>
+    </message>
+    <message>
+        <source>Make a blank wallet. Blank wallets do not initially have private keys or scripts. Private keys and addresses can be imported, or an HD seed can be set, at a later time.</source>
+        <translation type="unfinished">Bo'sh hamyon yaratish. Bo'sh hamyonlarga keyinchalik maxfiy kalitlar yoki manzillar import qilinishi mumkin, yana HD seedlar ham o'rnatilishi mumkin.</translation>
+    </message>
+    <message>
+        <source>Make Blank Wallet</source>
+        <translation type="unfinished">Bo'sh hamyon yaratish</translation>
+    </message>
+    <message>
+        <source>Use an external signing device such as a hardware wallet. Configure the external signer script in wallet preferences first.</source>
+        <translation type="unfinished">Uskuna hamyoni kabi tashqi signing qurilmasidan foydalaning. Avval hamyon sozlamalarida tashqi signer skriptini sozlang.</translation>
+    </message>
+    <message>
+        <source>External signer</source>
+        <translation type="unfinished">Tashqi signer</translation>
+    </message>
+    <message>
+        <source>Create</source>
+        <translation type="unfinished">Yaratmoq</translation>
+    </message>
+    <message>
+        <source>Compiled without external signing support (required for external signing)</source>
+        <extracomment>"External signing" means using devices such as hardware wallets.</extracomment>
+        <translation type="unfinished">Tashqi signing yordamisiz tuzilgan (tashqi signing uchun zarur)</translation>
     </message>
 </context>
 <context>
     <name>EditAddressDialog</name>
     <message>
         <source>Edit Address</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Манзилларни таҳрирлаш</translation>
     </message>
     <message>
         <source>&amp;Label</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">&amp;Ёрлик</translation>
     </message>
     <message>
         <source>The label associated with this address list entry</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Ёрлиқ ушбу манзилар рўйхати ёзуви билан боғланган</translation>
     </message>
     <message>
         <source>The address associated with this address list entry. This can only be modified for sending addresses.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Манзил ушбу манзиллар рўйхати ёзуви билан боғланган. Уни фақат жўнатиладиган манзиллар учун ўзгартирса бўлади.</translation>
     </message>
     <message>
         <source>&amp;Address</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>New receiving address</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">&amp;Манзил</translation>
     </message>
     <message>
         <source>New sending address</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Янги жунатилувчи манзил</translation>
     </message>
     <message>
         <source>Edit receiving address</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Кабул килувчи манзилни тахрирлаш</translation>
     </message>
     <message>
         <source>Edit sending address</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Жунатилувчи манзилни тахрирлаш</translation>
     </message>
     <message>
-        <source>The entered address &quot;%1&quot; is already in the address book.</source>
-        <translation type="unfinished"/>
+        <source>The entered address "%1" is not a valid Bitcoin address.</source>
+        <translation type="unfinished">Киритилган "%1" манзили тўғри Bitcoin манзили эмас.</translation>
     </message>
     <message>
-        <source>The entered address &quot;%1&quot; is not a valid Bitcoin address.</source>
-        <translation type="unfinished"/>
+        <source>Address "%1" already exists as a receiving address with label "%2" and so cannot be added as a sending address.</source>
+        <translation type="unfinished">Yuboruvchi(%1manzil) va  qabul qiluvchi(%2manzil) bir xil bo'lishi mumkin emas</translation>
+    </message>
+    <message>
+        <source>The entered address "%1" is already in the address book with label "%2".</source>
+        <translation type="unfinished">Kiritilgan %1manzil allaqachon %2yorlig'i bilan manzillar kitobida</translation>
     </message>
     <message>
         <source>Could not unlock wallet.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Ҳамён қулфдан чиқмади.</translation>
     </message>
     <message>
         <source>New key generation failed.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Янги калит яратиш амалга ошмади.</translation>
     </message>
 </context>
 <context>
     <name>FreespaceChecker</name>
     <message>
         <source>A new data directory will be created.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Янги маълумотлар директорияси яратилади.</translation>
     </message>
     <message>
         <source>name</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">номи</translation>
     </message>
     <message>
         <source>Directory already exists. Add %1 if you intend to create a new directory here.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Директория аллақачон мавжуд. Агар бу ерда янги директория яратмоқчи бўлсангиз, %1 қўшинг.</translation>
     </message>
     <message>
         <source>Path already exists, and is not a directory.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Йўл аллақачон мавжуд. У директория эмас.</translation>
     </message>
     <message>
         <source>Cannot create data directory here.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Маълумотлар директориясини бу ерда яратиб бўлмайди..</translation>
+    </message>
+</context>
+<context>
+    <name>Intro</name>
+    <message numerus="yes">
+        <source>%n GB of space available</source>
+        <translation type="unfinished">
+            <numerusform />
+            <numerusform />
+        </translation>
+    </message>
+    <message numerus="yes">
+        <source>(of %n GB needed)</source>
+        <translation type="unfinished">
+            <numerusform />
+            <numerusform />
+        </translation>
+    </message>
+    <message numerus="yes">
+        <source>(%n GB needed for full chain)</source>
+        <translation type="unfinished">
+            <numerusform />
+            <numerusform />
+        </translation>
+    </message>
+    <message>
+        <source>At least %1 GB of data will be stored in this directory, and it will grow over time.</source>
+        <translation type="unfinished">Kamida %1 GB ma'lumot bu yerda saqlanadi va vaqtlar davomida o'sib boradi</translation>
+    </message>
+    <message>
+        <source>Approximately %1 GB of data will be stored in this directory.</source>
+        <translation type="unfinished">Bu katalogda %1  GB ma'lumot saqlanadi</translation>
+    </message>
+    <message numerus="yes">
+        <source>(sufficient to restore backups %n day(s) old)</source>
+        <extracomment>Explanatory text on the capability of the current prune target.</extracomment>
+        <translation type="unfinished">
+            <numerusform>(%n kun oldingi zaxira nusxalarini tiklash uchun etarli)</numerusform>
+            <numerusform />
+        </translation>
+    </message>
+    <message>
+        <source>%1 will download and store a copy of the Bitcoin block chain.</source>
+        <translation type="unfinished"> Bitcoin blok zanjirining%1 nusxasini yuklab oladi va saqlaydi</translation>
+    </message>
+    <message>
+        <source>The wallet will also be stored in this directory.</source>
+        <translation type="unfinished">Hamyon ham ushbu katalogda saqlanadi.</translation>
+    </message>
+    <message>
+        <source>Error: Specified data directory "%1" cannot be created.</source>
+        <translation type="unfinished">Хато: кўрсатилган "%1" маълумотлар директориясини яратиб бўлмайди.</translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation type="unfinished">Хатолик</translation>
+    </message>
+    <message>
+        <source>Welcome</source>
+        <translation type="unfinished">Хуш келибсиз</translation>
+    </message>
+    <message>
+        <source>Welcome to %1.</source>
+        <translation type="unfinished">%1 ga xush kelibsiz</translation>
+    </message>
+    <message>
+        <source>As this is the first time the program is launched, you can choose where %1 will store its data.</source>
+        <translation type="unfinished">Birinchi marta dastur ishga tushirilganda, siz %1 o'z ma'lumotlarini qayerda saqlashini tanlashingiz mumkin</translation>
+    </message>
+    <message>
+        <source>Limit block chain storage to</source>
+        <translation type="unfinished">Blok zanjiri xotirasini bungacha cheklash:</translation>
+    </message>
+    <message>
+        <source>Reverting this setting requires re-downloading the entire blockchain. It is faster to download the full chain first and prune it later. Disables some advanced features.</source>
+        <translation type="unfinished">Bu sozlamani qaytarish butun blok zanjirini qayta yuklab olishni talab qiladi. Avval to'liq zanjirni yuklab olish va keyinroq kesish kamroq vaqt oladi. Ba'zi qo'shimcha funksiyalarni cheklaydi.</translation>
+    </message>
+    <message>
+        <source> GB</source>
+        <translation type="unfinished">GB</translation>
+    </message>
+    <message>
+        <source>This initial synchronisation is very demanding, and may expose hardware problems with your computer that had previously gone unnoticed. Each time you run %1, it will continue downloading where it left off.</source>
+        <translation type="unfinished">Ushbu dastlabki sinxronlash juda qiyin va kompyuteringiz bilan ilgari sezilmagan apparat muammolarini yuzaga keltirishi mumkin. Har safar %1 ni ishga tushirganingizda, u yuklab olish jarayonini qayerda to'xtatgan bo'lsa, o'sha yerdan boshlab davom ettiradi.</translation>
+    </message>
+    <message>
+        <source>If you have chosen to limit block chain storage (pruning), the historical data must still be downloaded and processed, but will be deleted afterward to keep your disk usage low.</source>
+        <translation type="unfinished">Agar siz blok zanjirini saqlashni cheklashni tanlagan bo'lsangiz (pruning), eski ma'lumotlar hali ham yuklab olinishi va qayta ishlanishi kerak, ammo diskdan kamroq foydalanish uchun keyin o'chiriladi.</translation>
+    </message>
+    <message>
+        <source>Use the default data directory</source>
+        <translation type="unfinished">Стандарт маълумотлар директориясидан фойдаланиш</translation>
+    </message>
+    <message>
+        <source>Use a custom data directory:</source>
+        <translation type="unfinished">Бошқа маълумотлар директориясида фойдаланинг:</translation>
     </message>
 </context>
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Bitcoin Core - Command-line options</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Bitcoin Core</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
         <source>version</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">версияси</translation>
     </message>
     <message>
-        <source>Usage:</source>
-        <translation type="unfinished"/>
+        <source>About %1</source>
+        <translation type="unfinished">%1 haqida</translation>
     </message>
     <message>
-        <source>command-line options</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>UI options</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Set language, for example &quot;de_DE&quot; (default: system locale)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Start minimized</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Set SSL root certificates for payment request (default: -system-)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Show splash screen on startup (default: 1)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Choose data directory on startup (default: 0)</source>
-        <translation type="unfinished"/>
+        <source>Command-line options</source>
+        <translation type="unfinished">Буйруқлар сатри мосламалари</translation>
     </message>
 </context>
 <context>
-    <name>Intro</name>
+    <name>ShutdownWindow</name>
     <message>
-        <source>Welcome</source>
-        <translation type="unfinished"/>
+        <source>%1 is shutting down…</source>
+        <translation type="unfinished">%1 yopilmoqda...</translation>
     </message>
     <message>
-        <source>Welcome to Bitcoin Core.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>As this is the first time the program is launched, you can choose where Bitcoin Core will store its data.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Bitcoin Core will download and store a copy of the Bitcoin block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Use the default data directory</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Use a custom data directory:</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Bitcoin</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Error: Specified data directory &quot;%1&quot; can not be created.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Error</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>GB of free space available</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>(of %1GB needed)</source>
-        <translation type="unfinished"/>
+        <source>Do not shut down the computer until this window disappears.</source>
+        <translation type="unfinished">Bu oyna paydo bo'lmagunicha kompyuterni o'chirmang.</translation>
     </message>
 </context>
+<context>
+    <name>ModalOverlay</name>
+    <message>
+        <source>Form</source>
+        <translation type="unfinished">Шакл</translation>
+    </message>
+    <message>
+        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the bitcoin network, as detailed below.</source>
+        <translation type="unfinished">So'nggi tranzaksiyalar hali ko'rinmasligi mumkin, shuning uchun hamyoningiz balansi noto'g'ri ko'rinishi mumkin. Sizning hamyoningiz bitkoin tarmog'i bilan sinxronlashni tugatgandan so'ng, quyida batafsil tavsiflanganidek, bu ma'lumot to'g'rilanadi.</translation>
+    </message>
+    <message>
+        <source>Attempting to spend bitcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <translation type="unfinished">Hali ko'rsatilmagan tranzaksiyalarga bitkoinlarni sarflashga urinish tarmoq tomonidan qabul qilinmaydi.</translation>
+    </message>
+    <message>
+        <source>Number of blocks left</source>
+        <translation type="unfinished">qolgan bloklar soni</translation>
+    </message>
+    <message>
+        <source>Unknown…</source>
+        <translation type="unfinished">Noma'lum...</translation>
+    </message>
+    <message>
+        <source>calculating…</source>
+        <translation type="unfinished">hisoblanmoqda...</translation>
+    </message>
+    <message>
+        <source>Last block time</source>
+        <translation type="unfinished">Сўнгги блок вақти</translation>
+    </message>
+    <message>
+        <source>Progress</source>
+        <translation type="unfinished">O'sish</translation>
+    </message>
+    <message>
+        <source>Progress increase per hour</source>
+        <translation type="unfinished">Harakatning soatiga o'sishi</translation>
+    </message>
+    <message>
+        <source>Estimated time left until synced</source>
+        <translation type="unfinished">Sinxronizatsiya yakunlanishiga taxminan qolgan vaqt</translation>
+    </message>
+    <message>
+        <source>Hide</source>
+        <translation type="unfinished">Yashirmoq</translation>
+    </message>
+    <message>
+        <source>%1 is currently syncing.  It will download headers and blocks from peers and validate them until reaching the tip of the block chain.</source>
+        <translation type="unfinished">%1 sinxronlanmoqda. U pirlardan sarlavhalar va bloklarni yuklab oladi va ularni blok zanjirining uchiga yetguncha tasdiqlaydi.</translation>
+    </message>
+    <message>
+        <source>Unknown. Syncing Headers (%1, %2%)…</source>
+        <translation type="unfinished">Noma'lum. Sarlavhalarni sinxronlash(%1, %2%)...</translation>
+    </message>
+    </context>
 <context>
     <name>OpenURIDialog</name>
     <message>
-        <source>Open URI</source>
-        <translation type="unfinished"/>
+        <source>Open bitcoin URI</source>
+        <translation type="unfinished">Bitkoin URI sini ochish</translation>
     </message>
     <message>
-        <source>Open payment request from URI or file</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>URI:</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Select payment request file</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Select payment request file to open</source>
-        <translation type="unfinished"/>
+        <source>Paste address from clipboard</source>
+        <extracomment>Tooltip text for button that allows you to paste an address that is in your clipboard.</extracomment>
+        <translation type="unfinished">Клипбоарддан манзилни қўйиш</translation>
     </message>
 </context>
 <context>
     <name>OptionsDialog</name>
     <message>
         <source>Options</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Танламалар</translation>
     </message>
     <message>
         <source>&amp;Main</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">&amp;Асосий</translation>
     </message>
     <message>
-        <source>Optional transaction fee per kB that helps make sure your transactions are processed quickly. Most transactions are 1 kB.</source>
-        <translation type="unfinished"/>
+        <source>Automatically start %1 after logging in to the system.</source>
+        <translation type="unfinished">%1 ni sistemaga kirilishi bilanoq avtomatik ishga tushirish.</translation>
     </message>
     <message>
-        <source>Pay transaction &amp;fee</source>
-        <translation type="unfinished"/>
+        <source>&amp;Start %1 on system login</source>
+        <translation type="unfinished">%1 ni sistemaga kirish paytida &amp;ishga tushirish</translation>
     </message>
     <message>
-        <source>Automatically start Bitcoin after logging in to the system.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>&amp;Start Bitcoin on system login</source>
-        <translation type="unfinished"/>
+        <source>Enabling pruning significantly reduces the disk space required to store transactions. All blocks are still fully validated. Reverting this setting requires re-downloading the entire blockchain.</source>
+        <translation type="unfinished">Do'kon tranzaksiyalari katta xotira talab qilgani tufayli pruning ni yoqish sezilarli darajada xotirada joy kamayishiga olib keladi. Barcha bloklar hali ham to'liq tasdiqlangan. Bu sozlamani qaytarish butun blok zanjirini qayta yuklab olishni talab qiladi.</translation>
     </message>
     <message>
         <source>Size of &amp;database cache</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>MB</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">&amp;Маълумотлар базаси кеши</translation>
     </message>
     <message>
         <source>Number of script &amp;verification threads</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Connect to the Bitcoin network through a SOCKS proxy.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>&amp;Connect through SOCKS proxy (default proxy):</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Мавзуларни &amp;тўғрилаш скрипти миқдори</translation>
     </message>
     <message>
         <source>IP address of the proxy (e.g. IPv4: 127.0.0.1 / IPv6: ::1)</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Прокси IP манзили (масалан: IPv4: 127.0.0.1 / IPv6: ::1)</translation>
     </message>
     <message>
-        <source>Third party URLs (e.g. a block explorer) that appear in the transactions tab as context menu items. %s in the URL is replaced by transaction hash. Multiple URLs are separated by vertical bar |.</source>
-        <translation type="unfinished"/>
+        <source>Shows if the supplied default SOCKS5 proxy is used to reach peers via this network type.</source>
+        <translation type="unfinished">Taqdim etilgan standart SOCKS5 proksi-serveridan ushbu tarmoq turi orqali pirlar bilan bog‘lanish uchun foydalanilganini ko'rsatadi.</translation>
     </message>
     <message>
-        <source>Third party transaction URLs</source>
-        <translation type="unfinished"/>
+        <source>Minimize instead of exit the application when the window is closed. When this option is enabled, the application will be closed only after selecting Exit in the menu.</source>
+        <translation type="unfinished">Oyna yopilganda dasturdan chiqish o'rniga minimallashtirish. Ushbu parametr yoqilganda, dastur faqat menyuda Chiqish ni tanlagandan keyin yopiladi.</translation>
     </message>
     <message>
-        <source>Active command-line options that override above options:</source>
-        <translation type="unfinished"/>
+        <source>Open the %1 configuration file from the working directory.</source>
+        <translation type="unfinished">%1 konfiguratsion faylini ishlash katalogidan ochish.</translation>
+    </message>
+    <message>
+        <source>Open Configuration File</source>
+        <translation type="unfinished">Konfiguratsion faylni ochish</translation>
     </message>
     <message>
         <source>Reset all client options to default.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Barcha mijoz sozlamalarini asl holiga qaytarish.</translation>
     </message>
     <message>
         <source>&amp;Reset Options</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Sozlamalarni &amp;qayta o'rnatish</translation>
     </message>
     <message>
         <source>&amp;Network</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Тармоқ</translation>
+    </message>
+    <message>
+        <source>Prune &amp;block storage to</source>
+        <translation type="unfinished">&amp;Blok xotirasini bunga kesish:</translation>
+    </message>
+    <message>
+        <source>Reverting this setting requires re-downloading the entire blockchain.</source>
+        <translation type="unfinished">Bu sozlamani qaytarish butun blok zanjirini qayta yuklab olishni talab qiladi.</translation>
+    </message>
+    <message>
+        <source>Set the number of script verification threads. Negative values correspond to the number of cores you want to leave free to the system.</source>
+        <extracomment>Tooltip text for Options window setting that sets the number of script verification threads. Explains that negative values mean to leave these many cores free to the system.</extracomment>
+        <translation type="unfinished">Skriptni tekshirish ip lari sonini belgilang. </translation>
     </message>
     <message>
         <source>(0 = auto, &lt;0 = leave that many cores free)</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">(0 = avtomatik, &lt;0 = bu yadrolarni bo'sh qoldirish)</translation>
+    </message>
+    <message>
+        <source>This allows you or a third party tool to communicate with the node through command-line and JSON-RPC commands.</source>
+        <extracomment>Tooltip text for Options window setting that enables the RPC server.</extracomment>
+        <translation type="unfinished">Bu sizga yoki uchinchi tomon vositasiga command-line va JSON-RPC buyruqlari orqali node bilan bog'lanish imkonini beradi.</translation>
+    </message>
+    <message>
+        <source>Enable R&amp;PC server</source>
+        <extracomment>An Options window setting to enable the RPC server.</extracomment>
+        <translation type="unfinished">R&amp;PC serverni yoqish</translation>
     </message>
     <message>
         <source>W&amp;allet</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Ҳамён</translation>
+    </message>
+    <message>
+        <source>Whether to set subtract fee from amount as default or not.</source>
+        <extracomment>Tooltip text for Options window setting that sets subtracting the fee from a sending amount as default.</extracomment>
+        <translation type="unfinished">Chegirma to'lovini standart qilib belgilash kerakmi yoki yo'qmi?</translation>
+    </message>
+    <message>
+        <source>Subtract &amp;fee from amount by default</source>
+        <extracomment>An Options window setting to set subtracting the fee from a sending amount as default.</extracomment>
+        <translation type="unfinished">Standart bo'yicha chegirma belgilash</translation>
     </message>
     <message>
         <source>Expert</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Ekspert</translation>
     </message>
     <message>
         <source>Enable coin &amp;control features</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Tangalarni &amp;nazorat qilish funksiyasini yoqish</translation>
     </message>
     <message>
-        <source>If you disable the spending of unconfirmed change, the change from a transaction cannot be used until that transaction has at least one confirmation. This also affects how your balance is computed.</source>
-        <translation type="unfinished"/>
+        <source>Enable &amp;PSBT controls</source>
+        <extracomment>An options window setting to enable PSBT controls.</extracomment>
+        <translation type="unfinished">&amp;PSBT nazoratini yoqish</translation>
     </message>
     <message>
-        <source>&amp;Spend unconfirmed change</source>
-        <translation type="unfinished"/>
+        <source>Whether to show PSBT controls.</source>
+        <extracomment>Tooltip text for options window setting that enables PSBT controls.</extracomment>
+        <translation type="unfinished">PSBT boshqaruvlarini ko'rsatish kerakmi?</translation>
     </message>
     <message>
-        <source>Automatically open the Bitcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation type="unfinished"/>
+        <source>External Signer (e.g. hardware wallet)</source>
+        <translation type="unfinished">Tashqi Signer(masalan: hamyon apparati)</translation>
     </message>
     <message>
-        <source>Map port using &amp;UPnP</source>
-        <translation type="unfinished"/>
+        <source>&amp;External signer script path</source>
+        <translation type="unfinished">&amp;Tashqi signer skripti yo'li</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Прокси &amp;IP рақами:</translation>
     </message>
     <message>
         <source>&amp;Port:</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">&amp;Порт:</translation>
     </message>
     <message>
         <source>Port of the proxy (e.g. 9050)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>SOCKS &amp;Version:</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>SOCKS version of the proxy (e.g. 5)</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Прокси порти (e.g. 9050)</translation>
     </message>
     <message>
         <source>&amp;Window</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">&amp;Ойна</translation>
     </message>
     <message>
         <source>Show only a tray icon after minimizing the window.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Ойна йиғилгандан сўнг фақат трэй нишончаси кўрсатилсин.</translation>
     </message>
     <message>
         <source>&amp;Minimize to the tray instead of the taskbar</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Minimize instead of exit the application when the window is closed. When this option is enabled, the application will be closed only after selecting Quit in the menu.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Манзиллар панели ўрнига трэйни &amp;йиғиш</translation>
     </message>
     <message>
         <source>M&amp;inimize on close</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Ёпишда й&amp;иғиш</translation>
     </message>
     <message>
         <source>&amp;Display</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">&amp;Кўрсатиш</translation>
     </message>
     <message>
         <source>User Interface &amp;language:</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Bitcoin.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Фойдаланувчи интерфейси &amp;тили:</translation>
     </message>
     <message>
         <source>&amp;Unit to show amounts in:</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Whether to show Bitcoin addresses in the transaction list or not.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>&amp;Display addresses in transaction list</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Whether to show coin control features or not.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>&amp;OK</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Миқдорларни кўрсатиш учун &amp;қисм:</translation>
     </message>
     <message>
         <source>&amp;Cancel</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">&amp;Бекор қилиш</translation>
+    </message>
+    <message>
+        <source>Compiled without external signing support (required for external signing)</source>
+        <extracomment>"External signing" means using devices such as hardware wallets.</extracomment>
+        <translation type="unfinished">Tashqi signing yordamisiz tuzilgan (tashqi signing uchun zarur)</translation>
     </message>
     <message>
         <source>default</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">стандарт</translation>
     </message>
     <message>
         <source>none</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">йўқ</translation>
     </message>
     <message>
         <source>Confirm options reset</source>
-        <translation type="unfinished"/>
+        <extracomment>Window title text of pop-up window shown when the user has chosen to reset options.</extracomment>
+        <translation type="unfinished">Тасдиқлаш танловларини рад қилиш</translation>
     </message>
     <message>
         <source>Client restart required to activate changes.</source>
-        <translation type="unfinished"/>
+        <extracomment>Text explaining that the settings changed will not come into effect until the client is restarted.</extracomment>
+        <translation type="unfinished">Ўзгаришлар амалга ошиши учун мижозни қайта ишга тушириш талаб қилинади.</translation>
     </message>
     <message>
-        <source>Client will be shutdown, do you want to proceed?</source>
-        <translation type="unfinished"/>
+        <source>Continue</source>
+        <translation type="unfinished">Davom etish</translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation type="unfinished">Хатолик</translation>
     </message>
     <message>
         <source>This change would require a client restart.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Ушбу ўзгариш мижозни қайтадан ишга туширишни талаб қилади.</translation>
     </message>
     <message>
         <source>The supplied proxy address is invalid.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Келтирилган прокси манзили ишламайди.</translation>
     </message>
 </context>
 <context>
     <name>OverviewPage</name>
     <message>
         <source>Form</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Шакл</translation>
     </message>
     <message>
         <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Кўрсатилган маълумот эскирган бўлиши мумкин. Ҳамёнингиз алоқа ўрнатилгандан сўнг Bitcoin тармоқ билан автоматик тарзда синхронланади, аммо жараён ҳалигача тугалланмади.</translation>
     </message>
     <message>
-        <source>Wallet</source>
-        <translation type="unfinished"/>
+        <source>Watch-only:</source>
+        <translation type="unfinished">Фақат кўришга</translation>
     </message>
     <message>
         <source>Available:</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Мавжуд:</translation>
     </message>
     <message>
         <source>Your current spendable balance</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Жорий сарфланадиган балансингиз</translation>
     </message>
     <message>
         <source>Pending:</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Кутилмоқда:</translation>
     </message>
     <message>
         <source>Total of transactions that have yet to be confirmed, and do not yet count toward the spendable balance</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Жами ўтказмалар ҳозиргача тасдиқланган ва сафланадиган баланс томонга ҳали ҳам ҳисобланмади</translation>
     </message>
     <message>
         <source>Immature:</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Тайёр эмас:</translation>
     </message>
     <message>
         <source>Mined balance that has not yet matured</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Миналаштирилган баланс ҳалигача тайёр эмас</translation>
+    </message>
+    <message>
+        <source>Balances</source>
+        <translation type="unfinished">Баланслар</translation>
     </message>
     <message>
         <source>Total:</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Жами:</translation>
     </message>
     <message>
         <source>Your current total balance</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Жорий умумий балансингиз</translation>
     </message>
     <message>
-        <source>&lt;b&gt;Recent transactions&lt;/b&gt;</source>
-        <translation type="unfinished"/>
+        <source>Your current balance in watch-only addresses</source>
+        <translation type="unfinished">Жорий балансингиз фақат кўринадиган манзилларда</translation>
     </message>
     <message>
-        <source>out of sync</source>
-        <translation type="unfinished"/>
+        <source>Spendable:</source>
+        <translation type="unfinished">Сарфланадиган:</translation>
     </message>
-</context>
+    <message>
+        <source>Recent transactions</source>
+        <translation type="unfinished">Сўнгги пул ўтказмалари</translation>
+    </message>
+    <message>
+        <source>Unconfirmed transactions to watch-only addresses</source>
+        <translation type="unfinished">Тасдиқланмаган ўтказмалар-фақат манзилларини кўриш</translation>
+    </message>
+    <message>
+        <source>Current total balance in watch-only addresses</source>
+        <translation type="unfinished">Жорий умумий баланс фақат кўринадиган манзилларда</translation>
+    </message>
+    </context>
+<context>
+    <name>PSBTOperationsDialog</name>
+    <message>
+        <source>own address</source>
+        <translation type="unfinished">ўз манзили</translation>
+    </message>
+    <message>
+        <source>or</source>
+        <translation type="unfinished">ёки</translation>
+    </message>
+    </context>
 <context>
     <name>PaymentServer</name>
     <message>
-        <source>URI handling</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>URI can not be parsed! This can be caused by an invalid Bitcoin address or malformed URI parameters.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Requested payment amount of %1 is too small (considered dust).</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
         <source>Payment request error</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Тўлов сўрови хато</translation>
     </message>
     <message>
-        <source>Cannot start bitcoin: click-to-pay handler</source>
-        <translation type="unfinished"/>
+        <source>URI handling</source>
+        <translation type="unfinished">URI осилиб қолмоқда</translation>
     </message>
-    <message>
-        <source>Net manager warning</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Your active proxy doesn&apos;t support SOCKS5, which is required for payment requests via proxy.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Payment request fetch URL is invalid: %1</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Payment request file handling</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Payment request file can not be read or processed! This can be caused by an invalid payment request file.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Unverified payment requests to custom payment scripts are unsupported.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Refund from %1</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Error communicating with %1: %2</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Payment request can not be parsed or processed!</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Bad response from server %1</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Payment acknowledged</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Network request error</source>
-        <translation type="unfinished"/>
-    </message>
-</context>
+    </context>
 <context>
-    <name>QObject</name>
+    <name>PeerTableModel</name>
     <message>
-        <source>Bitcoin</source>
-        <translation type="unfinished"/>
+        <source>User Agent</source>
+        <extracomment>Title of Peers Table column which contains the peer's User Agent string.</extracomment>
+        <translation type="unfinished">Фойдаланувчи вакил</translation>
     </message>
     <message>
-        <source>Error: Specified data directory &quot;%1&quot; does not exist.</source>
-        <translation type="unfinished"/>
+        <source>Direction</source>
+        <extracomment>Title of Peers Table column which indicates the direction the peer connection was initiated from.</extracomment>
+        <translation type="unfinished">Йўналиш</translation>
     </message>
     <message>
-        <source>Error: Cannot parse configuration file: %1. Only use key=value syntax.</source>
-        <translation type="unfinished"/>
+        <source>Address</source>
+        <extracomment>Title of Peers Table column which contains the IP/Onion/I2P address of the connected peer.</extracomment>
+        <translation type="unfinished">Манзил</translation>
     </message>
     <message>
-        <source>Error: Invalid combination of -regtest and -testnet.</source>
-        <translation type="unfinished"/>
+        <source>Type</source>
+        <extracomment>Title of Peers Table column which describes the type of peer connection. The "type" describes why the connection exists.</extracomment>
+        <translation type="unfinished">Тури</translation>
     </message>
     <message>
-        <source>Bitcoin Core didn&apos;t yet exit safely...</source>
-        <translation type="unfinished"/>
+        <source>Network</source>
+        <extracomment>Title of Peers Table column which states the network the peer connected through.</extracomment>
+        <translation type="unfinished">Тармоқ</translation>
     </message>
     <message>
-        <source>Enter a Bitcoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation type="unfinished"/>
+        <source>Inbound</source>
+        <extracomment>An Inbound Connection from a Peer.</extracomment>
+        <translation type="unfinished">Ички йўналиш</translation>
+    </message>
+    <message>
+        <source>Outbound</source>
+        <extracomment>An Outbound Connection to a Peer.</extracomment>
+        <translation type="unfinished">Ташқи йўналиш</translation>
     </message>
 </context>
 <context>
     <name>QRImageWidget</name>
     <message>
-        <source>&amp;Save Image...</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
         <source>&amp;Copy Image</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Расмдан &amp;нусха олиш</translation>
     </message>
     <message>
         <source>Save QR Code</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">QR кодни сақлаш</translation>
     </message>
-    <message>
-        <source>PNG Image (*.png)</source>
-        <translation type="unfinished"/>
-    </message>
-</context>
+    </context>
 <context>
     <name>RPCConsole</name>
     <message>
-        <source>Client name</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
         <source>N/A</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Тўғри келмайди</translation>
     </message>
     <message>
         <source>Client version</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Мижоз номи</translation>
     </message>
     <message>
         <source>&amp;Information</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Debug window</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">&amp;Маълумот</translation>
     </message>
     <message>
         <source>General</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Using OpenSSL version</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Асосий</translation>
     </message>
     <message>
         <source>Startup time</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Бошланиш вақти</translation>
     </message>
     <message>
         <source>Network</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Тармоқ</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Ном</translation>
     </message>
     <message>
-        <source>Number of connections</source>
-        <translation type="unfinished"/>
+        <source>&amp;Peers</source>
+        <translation type="unfinished">&amp;Уламлар</translation>
     </message>
     <message>
-        <source>Block chain</source>
-        <translation type="unfinished"/>
+        <source>Select a peer to view detailed information.</source>
+        <translation type="unfinished">Батафсил маълумотларни кўриш учун уламни танланг.</translation>
     </message>
     <message>
-        <source>Current number of blocks</source>
-        <translation type="unfinished"/>
+        <source>Version</source>
+        <translation type="unfinished">Версия</translation>
     </message>
     <message>
-        <source>Estimated total blocks</source>
-        <translation type="unfinished"/>
+        <source>User Agent</source>
+        <translation type="unfinished">Фойдаланувчи вакил</translation>
+    </message>
+    <message>
+        <source>Node window</source>
+        <translation type="unfinished">Node oynasi</translation>
+    </message>
+    <message>
+        <source>Services</source>
+        <translation type="unfinished">Хизматлар</translation>
+    </message>
+    <message>
+        <source>Connection Time</source>
+        <translation type="unfinished">Уланиш вақти</translation>
+    </message>
+    <message>
+        <source>Last Send</source>
+        <translation type="unfinished">Сўнгги жўнатилган</translation>
+    </message>
+    <message>
+        <source>Last Receive</source>
+        <translation type="unfinished">Сўнгги қабул қилинган</translation>
+    </message>
+    <message>
+        <source>Ping Time</source>
+        <translation type="unfinished">Ping вақти</translation>
     </message>
     <message>
         <source>Last block time</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Сўнгги блок вақти</translation>
     </message>
     <message>
         <source>&amp;Open</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">&amp;Очиш</translation>
     </message>
     <message>
         <source>&amp;Console</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">&amp;Терминал</translation>
     </message>
     <message>
         <source>&amp;Network Traffic</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>&amp;Clear</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">&amp;Тармоқ трафиги</translation>
     </message>
     <message>
         <source>Totals</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>In:</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Out:</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Build date</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Жами</translation>
     </message>
     <message>
         <source>Debug log file</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Open the Bitcoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Тузатиш журнали файли</translation>
     </message>
     <message>
         <source>Clear console</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Терминални тозалаш</translation>
     </message>
     <message>
-        <source>Welcome to the Bitcoin RPC console.</source>
-        <translation type="unfinished"/>
+        <source>In:</source>
+        <translation type="unfinished">Ичига:</translation>
     </message>
     <message>
-        <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
-        <translation type="unfinished"/>
+        <source>Out:</source>
+        <translation type="unfinished">Ташқарига:</translation>
     </message>
     <message>
-        <source>Type &lt;b&gt;help&lt;/b&gt; for an overview of available commands.</source>
-        <translation type="unfinished"/>
+        <source>&amp;Copy address</source>
+        <extracomment>Context menu action to copy the address of a peer.</extracomment>
+        <translation type="unfinished">&amp;Manzilni nusxalash</translation>
     </message>
     <message>
-        <source>%1 B</source>
-        <translation type="unfinished"/>
+        <source>None</source>
+        <translation type="unfinished">Йўқ</translation>
     </message>
     <message>
-        <source>%1 KB</source>
-        <translation type="unfinished"/>
+        <source>via %1</source>
+        <translation type="unfinished">%1 орқали</translation>
     </message>
     <message>
-        <source>%1 MB</source>
-        <translation type="unfinished"/>
+        <source>Yes</source>
+        <translation type="unfinished">Ҳа</translation>
     </message>
     <message>
-        <source>%1 GB</source>
-        <translation type="unfinished"/>
+        <source>No</source>
+        <translation type="unfinished">Йўқ</translation>
     </message>
     <message>
-        <source>%1 m</source>
-        <translation type="unfinished"/>
+        <source>To</source>
+        <translation type="unfinished">Га</translation>
     </message>
     <message>
-        <source>%1 h</source>
-        <translation type="unfinished"/>
+        <source>From</source>
+        <translation type="unfinished">Дан</translation>
     </message>
     <message>
-        <source>%1 h %2 m</source>
-        <translation type="unfinished"/>
+        <source>Unknown</source>
+        <translation type="unfinished">Номаълум</translation>
     </message>
 </context>
 <context>
     <name>ReceiveCoinsDialog</name>
     <message>
         <source>&amp;Amount:</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">&amp;Миқдор:</translation>
     </message>
     <message>
         <source>&amp;Label:</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">&amp;Ёрлиқ:</translation>
     </message>
     <message>
         <source>&amp;Message:</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Reuse one of the previously used receiving addresses. Reusing addresses has security and privacy issues. Do not use this unless re-generating a payment request made before.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>R&amp;euse an existing receiving address (not recommended)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Bitcoin network.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">&amp;Хабар:</translation>
     </message>
     <message>
         <source>An optional label to associate with the new receiving address.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Янги қабул қилинаётган манзил билан боғланган танланадиган ёрлиқ.</translation>
     </message>
     <message>
         <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Ушбу сўровдан тўловларни сўраш учун фойдаланинг. Барча майдонлар &lt;b&gt;мажбурий эмас&lt;/b&gt;.</translation>
     </message>
     <message>
         <source>An optional amount to request. Leave this empty or zero to not request a specific amount.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Хоҳланган миқдор сўрови. Кўрсатилган миқдорни сўраш учун буни бўш ёки ноль қолдиринг.</translation>
     </message>
     <message>
         <source>Clear all fields of the form.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Шаклнинг барча майдончаларини тозалаш</translation>
     </message>
     <message>
         <source>Clear</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Тозалаш</translation>
     </message>
     <message>
         <source>Requested payments history</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>&amp;Request payment</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Сўралган тўлов тарихи</translation>
     </message>
     <message>
         <source>Show the selected request (does the same as double clicking an entry)</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Танланган сўровни кўрсатиш (икки марта босилганда ҳам бир хил амал бажарилсин)</translation>
     </message>
     <message>
         <source>Show</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Кўрсатиш</translation>
     </message>
     <message>
         <source>Remove the selected entries from the list</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Танланганларни рўйхатдан ўчириш</translation>
     </message>
     <message>
         <source>Remove</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Ўчириш</translation>
     </message>
     <message>
-        <source>Copy label</source>
-        <translation type="unfinished"/>
+        <source>&amp;Copy address</source>
+        <translation type="unfinished">&amp;Manzilni nusxalash</translation>
     </message>
     <message>
-        <source>Copy message</source>
-        <translation type="unfinished"/>
+        <source>Copy &amp;label</source>
+        <translation type="unfinished">&amp;Yorliqni nusxalash</translation>
     </message>
     <message>
-        <source>Copy amount</source>
-        <translation type="unfinished"/>
+        <source>Copy &amp;amount</source>
+        <translation type="unfinished">&amp;Miqdorni nusxalash</translation>
     </message>
-</context>
+    <message>
+        <source>Could not unlock wallet.</source>
+        <translation type="unfinished">Ҳамён қулфдан чиқмади.</translation>
+    </message>
+    </context>
 <context>
     <name>ReceiveRequestDialog</name>
     <message>
-        <source>QR Code</source>
-        <translation type="unfinished"/>
+        <source>Amount:</source>
+        <translation type="unfinished">Миқдори:</translation>
     </message>
     <message>
-        <source>Copy &amp;URI</source>
-        <translation type="unfinished"/>
+        <source>Message:</source>
+        <translation type="unfinished">Хабар</translation>
+    </message>
+    <message>
+        <source>Wallet:</source>
+        <translation type="unfinished">Hamyon</translation>
     </message>
     <message>
         <source>Copy &amp;Address</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>&amp;Save Image...</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Request payment to %1</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Нусҳалаш &amp; Манзил</translation>
     </message>
     <message>
         <source>Payment information</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Тўлов маълумоти</translation>
     </message>
     <message>
-        <source>URI</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Address</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Amount</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Label</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Message</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Resulting URI too long, try to reduce the text for label / message.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Error encoding URI into QR Code.</source>
-        <translation type="unfinished"/>
+        <source>Request payment to %1</source>
+        <translation type="unfinished"> %1 дан Тўловни сўраш</translation>
     </message>
 </context>
 <context>
     <name>RecentRequestsTableModel</name>
     <message>
         <source>Date</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Сана</translation>
     </message>
     <message>
         <source>Label</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Ёрлиқ</translation>
     </message>
     <message>
         <source>Message</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Amount</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Хабар</translation>
     </message>
     <message>
         <source>(no label)</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">(Ёрлиқ мавжуд эмас)</translation>
     </message>
     <message>
         <source>(no message)</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">(Хабар йўқ)</translation>
     </message>
-    <message>
-        <source>(no amount)</source>
-        <translation type="unfinished"/>
-    </message>
-</context>
+    </context>
 <context>
     <name>SendCoinsDialog</name>
     <message>
         <source>Send Coins</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Тангаларни жунат</translation>
     </message>
     <message>
         <source>Coin Control Features</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Inputs...</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Танга бошқаруви ҳусусиятлари</translation>
     </message>
     <message>
         <source>automatically selected</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">автоматик тарзда танланган</translation>
     </message>
     <message>
         <source>Insufficient funds!</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Кам миқдор</translation>
     </message>
     <message>
         <source>Quantity:</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Сони:</translation>
     </message>
     <message>
         <source>Bytes:</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Байт:</translation>
     </message>
     <message>
         <source>Amount:</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Priority:</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Миқдори:</translation>
     </message>
     <message>
         <source>Fee:</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Low Output:</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Солиқ:</translation>
     </message>
     <message>
         <source>After Fee:</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Солиқдан сўнг:</translation>
     </message>
     <message>
         <source>Change:</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Ўзгартириш:</translation>
     </message>
     <message>
         <source>If this is activated, but the change address is empty or invalid, change will be sent to a newly generated address.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Агар бу фаоллаштирилса, аммо ўзгартирилган манзил бўл ёки нотўғри бўлса, ўзгариш янги яратилган манзилга жўнатилади.</translation>
     </message>
     <message>
         <source>Custom change address</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Бошқа ўзгартирилган манзил</translation>
+    </message>
+    <message>
+        <source>Transaction Fee:</source>
+        <translation type="unfinished">Ўтказма тўлови</translation>
+    </message>
+    <message>
+        <source>per kilobyte</source>
+        <translation type="unfinished">Хар килобайтига</translation>
+    </message>
+    <message>
+        <source>Hide</source>
+        <translation type="unfinished">Yashirmoq</translation>
+    </message>
+    <message>
+        <source>Recommended:</source>
+        <translation type="unfinished">Тавсия этилган</translation>
     </message>
     <message>
         <source>Send to multiple recipients at once</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Add &amp;Recipient</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Бирданига бир нечта қабул қилувчиларга жўнатиш</translation>
     </message>
     <message>
         <source>Clear all fields of the form.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Шаклнинг барча майдончаларини тозалаш</translation>
     </message>
     <message>
         <source>Clear &amp;All</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Барчасини &amp; Тозалаш</translation>
     </message>
     <message>
         <source>Balance:</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Баланс</translation>
     </message>
     <message>
         <source>Confirm the send action</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Жўнатиш амалини тасдиқлаш</translation>
     </message>
     <message>
         <source>S&amp;end</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Confirm send coins</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>%1 to %2</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Жў&amp;натиш</translation>
     </message>
     <message>
         <source>Copy quantity</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Нусха сони</translation>
     </message>
     <message>
         <source>Copy amount</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Кийматни нусхала</translation>
     </message>
     <message>
         <source>Copy fee</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Нусха солиғи</translation>
     </message>
     <message>
         <source>Copy after fee</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Нусха солиқдан сўнг</translation>
     </message>
     <message>
         <source>Copy bytes</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Copy priority</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Copy low output</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Нусха байти</translation>
     </message>
     <message>
         <source>Copy change</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Нусха қайтими</translation>
     </message>
     <message>
-        <source>Total Amount %1 (= %2)</source>
-        <translation type="unfinished"/>
+        <source>%1 to %2</source>
+        <translation type="unfinished">%1 дан %2</translation>
     </message>
     <message>
         <source>or</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">ёки</translation>
     </message>
     <message>
-        <source>The recipient address is not valid, please recheck.</source>
-        <translation type="unfinished"/>
+        <source>Transaction fee</source>
+        <translation type="unfinished">Ўтказма тўлови</translation>
+    </message>
+    <message>
+        <source>Confirm send coins</source>
+        <translation type="unfinished">Тангалар жўнаишни тасдиқлаш</translation>
     </message>
     <message>
         <source>The amount to pay must be larger than 0.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Тўлов миқдори 0. дан катта бўлиши керак. </translation>
     </message>
-    <message>
-        <source>The amount exceeds your balance.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>The total exceeds your balance when the %1 transaction fee is included.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Duplicate address found, can only send to each address once per send operation.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Transaction creation failed!</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
-        <translation type="unfinished"/>
+    <message numerus="yes">
+        <source>Estimated to begin confirmation within %n block(s).</source>
+        <translation type="unfinished">
+            <numerusform />
+            <numerusform />
+        </translation>
     </message>
     <message>
         <source>Warning: Invalid Bitcoin address</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>(no label)</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Диққат: Нотўғр Bitcoin манзили</translation>
     </message>
     <message>
         <source>Warning: Unknown change address</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Диққат: Номаълум ўзгариш манзили</translation>
     </message>
     <message>
-        <source>Are you sure you want to send?</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>added as transaction fee</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Payment request expired</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Invalid payment address %1</source>
-        <translation type="unfinished"/>
+        <source>(no label)</source>
+        <translation type="unfinished">(Ёрлиқ мавжуд эмас)</translation>
     </message>
 </context>
 <context>
     <name>SendCoinsEntry</name>
     <message>
         <source>A&amp;mount:</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">&amp;Миқдори:</translation>
     </message>
     <message>
         <source>Pay &amp;To:</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>The address to send the payment to (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Enter a label for this address to add it to your address book</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">&amp;Тўлов олувчи:</translation>
     </message>
     <message>
         <source>&amp;Label:</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">&amp;Ёрлиқ:</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>This is a normal payment.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Alt+A</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Олдин фойдаланилган манзилни танла</translation>
     </message>
     <message>
         <source>Paste address from clipboard</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Alt+P</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Remove this entry</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Клипбоарддан манзилни қўйиш</translation>
     </message>
     <message>
         <source>Message:</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Хабар</translation>
     </message>
-    <message>
-        <source>This is a verified payment request.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Enter a label for this address to add it to the list of used addresses</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>A message that was attached to the bitcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Bitcoin network.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>This is an unverified payment request.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Pay To:</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Memo:</source>
-        <translation type="unfinished"/>
-    </message>
-</context>
-<context>
-    <name>ShutdownWindow</name>
-    <message>
-        <source>Bitcoin Core is shutting down...</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Do not shut down the computer until this window disappears.</source>
-        <translation type="unfinished"/>
-    </message>
-</context>
+    </context>
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
-        <source>Signatures - Sign / Verify a Message</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>&amp;Sign Message</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>You can sign messages with your addresses to prove you own them. Be careful not to sign anything vague, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>The address to sign the message with (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
         <source>Choose previously used address</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Alt+A</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Олдин фойдаланилган манзилни танла</translation>
     </message>
     <message>
         <source>Paste address from clipboard</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Alt+P</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Enter the message you want to sign here</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Клипбоарддан манзилни қўйиш</translation>
     </message>
     <message>
         <source>Signature</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Copy the current signature to the system clipboard</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Sign the message to prove you own this Bitcoin address</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Sign &amp;Message</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Reset all sign message fields</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Имзо</translation>
     </message>
     <message>
         <source>Clear &amp;All</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>&amp;Verify Message</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Enter the signing address, message (ensure you copy line breaks, spaces, tabs, etc. exactly) and signature below to verify the message. Be careful not to read more into the signature than what is in the signed message itself, to avoid being tricked by a man-in-the-middle attack.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>The address the message was signed with (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Verify the message to ensure it was signed with the specified Bitcoin address</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Verify &amp;Message</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Reset all verify message fields</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Enter a Bitcoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Click &quot;Sign Message&quot; to generate signature</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>The entered address is invalid.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Please check the address and try again.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>The entered address does not refer to a key.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Wallet unlock was cancelled.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Private key for the entered address is not available.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Message signing failed.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Message signed.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>The signature could not be decoded.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Please check the signature and try again.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>The signature did not match the message digest.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Message verification failed.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Барчасини &amp; Тозалаш</translation>
     </message>
     <message>
         <source>Message verified.</source>
-        <translation type="unfinished"/>
-    </message>
-</context>
-<context>
-    <name>SplashScreen</name>
-    <message>
-        <source>Bitcoin Core</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>The Bitcoin Core developers</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>[testnet]</source>
-        <translation type="unfinished"/>
-    </message>
-</context>
-<context>
-    <name>TrafficGraphWidget</name>
-    <message>
-        <source>KB/s</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Хабар тасдиқланди.</translation>
     </message>
 </context>
 <context>
     <name>TransactionDesc</name>
     <message>
-        <source>Open until %1</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>conflicted</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>%1/offline</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
         <source>%1/unconfirmed</source>
-        <translation type="unfinished"/>
+        <extracomment>Text explaining the current status of a transaction, shown in the status field of the details window for this transaction. This status represents a transaction confirmed in at least one block, but less than 6 blocks.</extracomment>
+        <translation type="unfinished">%1/тасдиқланмади</translation>
     </message>
     <message>
         <source>%1 confirmations</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Status</source>
-        <translation type="unfinished"/>
-    </message>
-    <message numerus="yes">
-        <source>, broadcast through %n node(s)</source>
-        <translation type="unfinished"><numerusform></numerusform></translation>
+        <extracomment>Text explaining the current status of a transaction, shown in the status field of the details window for this transaction. This status represents a transaction confirmed in 6 or more blocks.</extracomment>
+        <translation type="unfinished">%1 тасдиқлашлар</translation>
     </message>
     <message>
         <source>Date</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Сана</translation>
     </message>
     <message>
         <source>Source</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Манба</translation>
     </message>
     <message>
         <source>Generated</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Яратилган</translation>
     </message>
     <message>
         <source>From</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>To</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>own address</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>label</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Credit</source>
-        <translation type="unfinished"/>
-    </message>
-    <message numerus="yes">
-        <source>matures in %n more block(s)</source>
-        <translation type="unfinished"><numerusform></numerusform></translation>
-    </message>
-    <message>
-        <source>not accepted</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Debit</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Transaction fee</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Net amount</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Message</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Comment</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Transaction ID</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Merchant</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Generated coins must mature %1 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to &quot;not accepted&quot; and it won&apos;t be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Debug information</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Transaction</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Inputs</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Amount</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>true</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>false</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>, has not been successfully broadcast yet</source>
-        <translation type="unfinished"/>
-    </message>
-    <message numerus="yes">
-        <source>Open for %n more block(s)</source>
-        <translation type="unfinished"><numerusform></numerusform></translation>
+        <translation type="unfinished">Дан</translation>
     </message>
     <message>
         <source>unknown</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Номаълум</translation>
+    </message>
+    <message>
+        <source>To</source>
+        <translation type="unfinished">Га</translation>
+    </message>
+    <message>
+        <source>own address</source>
+        <translation type="unfinished">ўз манзили</translation>
+    </message>
+    <message>
+        <source>label</source>
+        <translation type="unfinished">ёрлиқ</translation>
+    </message>
+    <message>
+        <source>Credit</source>
+        <translation type="unfinished">Кредит (қарз)</translation>
+    </message>
+    <message numerus="yes">
+        <source>matures in %n more block(s)</source>
+        <translation type="unfinished">
+            <numerusform />
+            <numerusform />
+        </translation>
+    </message>
+    <message>
+        <source>not accepted</source>
+        <translation type="unfinished">қабул қилинмади</translation>
+    </message>
+    <message>
+        <source>Transaction fee</source>
+        <translation type="unfinished">Ўтказма тўлови</translation>
+    </message>
+    <message>
+        <source>Net amount</source>
+        <translation type="unfinished">Умумий миқдор</translation>
+    </message>
+    <message>
+        <source>Message</source>
+        <translation type="unfinished">Хабар</translation>
+    </message>
+    <message>
+        <source>Comment</source>
+        <translation type="unfinished">Шарҳ</translation>
+    </message>
+    <message>
+        <source>Transaction ID</source>
+        <translation type="unfinished">ID</translation>
+    </message>
+    <message>
+        <source>Merchant</source>
+        <translation type="unfinished">Савдо</translation>
+    </message>
+    <message>
+        <source>Transaction</source>
+        <translation type="unfinished">Ўтказма</translation>
+    </message>
+    <message>
+        <source>Amount</source>
+        <translation type="unfinished">Миқдори</translation>
+    </message>
+    <message>
+        <source>true</source>
+        <translation type="unfinished">рост</translation>
+    </message>
+    <message>
+        <source>false</source>
+        <translation type="unfinished">ёлғон</translation>
     </message>
 </context>
 <context>
     <name>TransactionDescDialog</name>
     <message>
-        <source>Transaction details</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
         <source>This pane shows a detailed description of the transaction</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Ушбу ойна операциянинг батафсил таърифини кўрсатади</translation>
     </message>
-</context>
+    </context>
 <context>
     <name>TransactionTableModel</name>
     <message>
         <source>Date</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Сана</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Тури</translation>
     </message>
     <message>
-        <source>Address</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Amount</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Immature (%1 confirmations, will be available after %2)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message numerus="yes">
-        <source>Open for %n more block(s)</source>
-        <translation type="unfinished"><numerusform></numerusform></translation>
-    </message>
-    <message>
-        <source>Open until %1</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Confirmed (%1 confirmations)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>This block was not received by any other nodes and will probably not be accepted!</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Generated but not accepted</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Offline</source>
-        <translation type="unfinished"/>
+        <source>Label</source>
+        <translation type="unfinished">Ёрлиқ</translation>
     </message>
     <message>
         <source>Unconfirmed</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Тасдиқланмаган</translation>
     </message>
     <message>
-        <source>Confirming (%1 of %2 recommended confirmations)</source>
-        <translation type="unfinished"/>
+        <source>Confirmed (%1 confirmations)</source>
+        <translation type="unfinished">Тасдиқланди (%1 та тасдиқ)</translation>
     </message>
     <message>
-        <source>Conflicted</source>
-        <translation type="unfinished"/>
+        <source>Generated but not accepted</source>
+        <translation type="unfinished">Яратилди, аммо қабул қилинмади</translation>
     </message>
     <message>
         <source>Received with</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Ёрдамида қабул қилиш</translation>
     </message>
     <message>
         <source>Received from</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Дан қабул қилиш</translation>
     </message>
     <message>
         <source>Sent to</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Payment to yourself</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Жўнатиш</translation>
     </message>
     <message>
         <source>Mined</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Фойда</translation>
     </message>
     <message>
         <source>(n/a)</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">(қ/қ)</translation>
+    </message>
+    <message>
+        <source>(no label)</source>
+        <translation type="unfinished">(Ёрлиқ мавжуд эмас)</translation>
     </message>
     <message>
         <source>Transaction status. Hover over this field to show number of confirmations.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Ўтказма ҳолати. Ушбу майдон бўйлаб тасдиқлашлар сонини кўрсатиш.</translation>
     </message>
     <message>
         <source>Date and time that the transaction was received.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Ўтказма қабул қилинган сана ва вақт.</translation>
     </message>
     <message>
         <source>Type of transaction.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Destination address of transaction.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Пул ўтказмаси тури</translation>
     </message>
     <message>
         <source>Amount removed from or added to balance.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Миқдор ўчирилган ёки балансга қўшилган.</translation>
     </message>
 </context>
 <context>
     <name>TransactionView</name>
     <message>
         <source>All</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Барча</translation>
     </message>
     <message>
         <source>Today</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Бугун</translation>
     </message>
     <message>
         <source>This week</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Шу ҳафта</translation>
     </message>
     <message>
         <source>This month</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Шу ой</translation>
     </message>
     <message>
         <source>Last month</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Ўтган хафта</translation>
     </message>
     <message>
         <source>This year</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Range...</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Шу йил</translation>
     </message>
     <message>
         <source>Received with</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Ёрдамида қабул қилиш</translation>
     </message>
     <message>
         <source>Sent to</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>To yourself</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Жўнатиш</translation>
     </message>
     <message>
         <source>Mined</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Фойда</translation>
     </message>
     <message>
         <source>Other</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Enter address or label to search</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Бошка</translation>
     </message>
     <message>
         <source>Min amount</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Мин қиймат</translation>
     </message>
     <message>
-        <source>Copy address</source>
-        <translation type="unfinished"/>
+        <source>&amp;Copy address</source>
+        <translation type="unfinished">&amp;Manzilni nusxalash</translation>
     </message>
     <message>
-        <source>Copy label</source>
-        <translation type="unfinished"/>
+        <source>Copy &amp;label</source>
+        <translation type="unfinished">&amp;Yorliqni nusxalash</translation>
     </message>
     <message>
-        <source>Copy amount</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Copy transaction ID</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Edit label</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Show transaction details</source>
-        <translation type="unfinished"/>
+        <source>Copy &amp;amount</source>
+        <translation type="unfinished">&amp;Miqdorni nusxalash</translation>
     </message>
     <message>
         <source>Export Transaction History</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Ўтказмалар тарихини экспорт қилиш</translation>
     </message>
     <message>
-        <source>Exporting Failed</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>There was an error trying to save the transaction history to %1.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Exporting Successful</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>The transaction history was successfully saved to %1.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Comma separated file (*.csv)</source>
-        <translation type="unfinished"/>
+        <source>Comma separated file</source>
+        <extracomment>Expanded name of the CSV file format. See: https://en.wikipedia.org/wiki/Comma-separated_values.</extracomment>
+        <translation type="unfinished">Вергул билан ажратилган файл</translation>
     </message>
     <message>
         <source>Confirmed</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Тасдиқланди</translation>
+    </message>
+    <message>
+        <source>Watch-only</source>
+        <translation type="unfinished">Фақат кўришга</translation>
     </message>
     <message>
         <source>Date</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Сана</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Тури</translation>
     </message>
     <message>
         <source>Label</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Ёрлиқ</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Манзил</translation>
     </message>
     <message>
-        <source>Amount</source>
-        <translation type="unfinished"/>
+        <source>Exporting Failed</source>
+        <translation type="unfinished">Экспорт қилиб бўлмади</translation>
     </message>
     <message>
-        <source>ID</source>
-        <translation type="unfinished"/>
+        <source>The transaction history was successfully saved to %1.</source>
+        <translation type="unfinished">Ўтказмалар тарихи %1 га муваффаққиятли сақланди.</translation>
     </message>
     <message>
         <source>Range:</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Оралиқ:</translation>
     </message>
     <message>
         <source>to</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Кимга</translation>
     </message>
 </context>
 <context>
     <name>WalletFrame</name>
     <message>
-        <source>No wallet has been loaded.</source>
-        <translation type="unfinished"/>
+        <source>Create a new wallet</source>
+        <translation type="unfinished">Yangi hamyon yaratish</translation>
     </message>
-</context>
+    <message>
+        <source>Error</source>
+        <translation type="unfinished">Хатолик</translation>
+    </message>
+    </context>
 <context>
     <name>WalletModel</name>
     <message>
         <source>Send Coins</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Тангаларни жунат</translation>
     </message>
-</context>
+    </context>
 <context>
     <name>WalletView</name>
     <message>
         <source>&amp;Export</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">&amp;Экспорт</translation>
     </message>
     <message>
         <source>Export the data in the current tab to a file</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Жорий ички ойна ичидаги маълумотларни файлга экспорт қилиш</translation>
     </message>
     <message>
-        <source>Backup Wallet</source>
-        <translation type="unfinished"/>
+        <source>Wallet Data</source>
+        <extracomment>Name of the wallet data file format.</extracomment>
+        <translation type="unfinished">Hamyon maʼlumotlari</translation>
     </message>
-    <message>
-        <source>Wallet Data (*.dat)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Backup Failed</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>There was an error trying to save the wallet data to %1.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>The wallet data was successfully saved to %1.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Backup Successful</source>
-        <translation type="unfinished"/>
-    </message>
-</context>
+    </context>
 <context>
     <name>bitcoin-core</name>
     <message>
-        <source>Usage:</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>List commands</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Get help for a command</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Options:</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Specify configuration file (default: bitcoin.conf)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Specify pid file (default: bitcoind.pid)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Specify data directory</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Listen for connections on &lt;port&gt; (default: 8333 or testnet: 18333)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Maintain at most &lt;n&gt; connections to peers (default: 125)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Connect to a node to retrieve peer addresses, and disconnect</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Specify your own public address</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Threshold for disconnecting misbehaving peers (default: 100)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Number of seconds to keep misbehaving peers from reconnecting (default: 86400)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>An error occurred while setting up the RPC port %u for listening on IPv4: %s</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 8332 or testnet: 18332)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Accept command line and JSON-RPC commands</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Bitcoin Core RPC client version</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Run in the background as a daemon and accept commands</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Use the test network</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>%s, you must set a rpcpassword in the configuration file:
-%s
-It is recommended you use the following random password:
-rpcuser=bitcoinrpc
-rpcpassword=%s
-(you do not need to remember this password)
-The username and password MUST NOT be the same.
-If the file does not exist, create it with owner-readable-only file permissions.
-It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.com
-</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Acceptable ciphers (default: TLSv1.2+HIGH:TLSv1+HIGH:!SSLv2:!aNULL:!eNULL:!3DES:@STRENGTH)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>An error occurred while setting up the RPC port %u for listening on IPv6, falling back to IPv4: %s</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Continuously rate-limit free transactions to &lt;n&gt;*1000 bytes per minute (default:15)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Enter regression test mode, which uses a special chain in which blocks can be solved instantly. This is intended for regression testing tools and app development.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Enter regression test mode, which uses a special chain in which blocks can be solved instantly.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Error: Listening for incoming connections failed (listen returned error %d)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Error: The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Error: This transaction requires a transaction fee of at least %s because of its amount, complexity, or use of recently received funds!</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Execute command when a wallet transaction changes (%s in cmd is replaced by TxID)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Fees smaller than this are considered zero fee (for transaction creation) (default:</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: 100)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>How thorough the block verification of -checkblocks is (0-4, default: 3)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>In this mode -genproclimit controls how many blocks are generated immediately.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Set the number of script verification threads (%u to %d, 0 = auto, &lt;0 = leave that many cores free, default: %d)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Set the processor limit for when generation is on (-1 = unlimited, default: -1)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>This is a pre-release test build - use at your own risk - do not use for mining or merchant applications</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Unable to bind to %s on this computer. Bitcoin Core is probably already running.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: -proxy)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Warning: -paytxfee is set very high! This is the transaction fee you will pay if you send a transaction.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Bitcoin will not work properly.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Warning: We do not appear to fully agree with our peers! You may need to upgrade, or other nodes may need to upgrade.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Warning: error reading wallet.dat! All keys read correctly, but transaction data or address book entries might be missing or incorrect.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Warning: wallet.dat corrupt, data salvaged! Original wallet.dat saved as wallet.{timestamp}.bak in %s; if your balance or transactions are incorrect you should restore from a backup.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>(default: 1)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>(default: wallet.dat)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>&lt;category&gt; can be:</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Attempt to recover private keys from a corrupt wallet.dat</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Bitcoin Core Daemon</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Block creation options:</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Clear list of wallet transactions (diagnostic tool; implies -rescan)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Connect only to the specified node(s)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Connect through SOCKS proxy</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Connect to JSON-RPC on &lt;port&gt; (default: 8332 or testnet: 18332)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Connection options:</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Corrupted block database detected</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Debugging/Testing options:</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Disable safemode, override a real safe mode event (default: 0)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Discover own IP address (default: 1 when listening and no -externalip)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Do not load the wallet and disable wallet RPC calls</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Do you want to rebuild the block database now?</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Error initializing block database</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Error initializing wallet database environment %s!</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Error loading block database</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Error opening block database</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Error: Disk space is low!</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Error: Wallet locked, unable to create transaction!</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Error: system error: </source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Failed to listen on any port. Use -listen=0 if you want this.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Failed to read block info</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Failed to read block</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Failed to sync block index</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Failed to write block index</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Failed to write block info</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Failed to write block</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Failed to write file info</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Failed to write to coin database</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Failed to write transaction index</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Failed to write undo data</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Fee per kB to add to transactions you send</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Fees smaller than this are considered zero fee (for relaying) (default:</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Find peers using DNS lookup (default: 1 unless -connect)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Force safe mode (default: 0)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Generate coins (default: 0)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>How many blocks to check at startup (default: 288, 0 = all)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>If &lt;category&gt; is not supplied, output all debugging information.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Importing...</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Incorrect or no genesis block found. Wrong datadir for network?</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Invalid -onion address: &apos;%s&apos;</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Not enough file descriptors available.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Prepend debug output with timestamp (default: 1)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>RPC client options:</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Rebuild block chain index from current blk000??.dat files</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Select SOCKS version for -proxy (4 or 5, default: 5)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Set database cache size in megabytes (%d to %d, default: %d)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Set maximum block size in bytes (default: %d)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Set the number of threads to service RPC calls (default: 4)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Specify wallet file (within data directory)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Spend unconfirmed change when sending transactions (default: 1)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>This is intended for regression testing tools and app development.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Usage (deprecated, use bitcoin-cli):</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Verifying blocks...</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Verifying wallet...</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Wait for RPC server to start</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Wallet %s resides outside data directory %s</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Wallet options:</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Warning: Deprecated argument -debugnet ignored, use -debug=net</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>You need to rebuild the database using -reindex to change -txindex</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Imports blocks from external blk000??.dat file</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Cannot obtain a lock on data directory %s. Bitcoin Core is probably already running.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Execute command when a relevant alert is received or we see a really long fork (%s in cmd is replaced by message)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Output debugging information (default: 0, supplying &lt;category&gt; is optional)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Set maximum size of high-priority/low-fee transactions in bytes (default: %d)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Information</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Invalid amount for -minrelaytxfee=&lt;amount&gt;: &apos;%s&apos;</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Invalid amount for -mintxfee=&lt;amount&gt;: &apos;%s&apos;</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Limit size of signature cache to &lt;n&gt; entries (default: 50000)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Log transaction priority and fee per kB when mining blocks (default: 0)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Maintain a full transaction index (default: 0)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Maximum per-connection receive buffer, &lt;n&gt;*1000 bytes (default: 5000)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Maximum per-connection send buffer, &lt;n&gt;*1000 bytes (default: 1000)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Only accept block chain matching built-in checkpoints (default: 1)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Only connect to nodes in network &lt;net&gt; (IPv4, IPv6 or Tor)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Print block on startup, if found in block index</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Print block tree on startup (default: 0)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>RPC SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>RPC server options:</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Randomly drop 1 of every &lt;n&gt; network messages</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Randomly fuzz 1 of every &lt;n&gt; network messages</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Run a thread to flush wallet periodically (default: 1)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Send command to Bitcoin Core</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Send trace/debug info to console instead of debug.log file</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Set minimum block size in bytes (default: 0)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Sets the DB_PRIVATE flag in the wallet db environment (default: 1)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Show all debugging options (usage: --help -help-debug)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Show benchmark information (default: 0)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Shrink debug.log file on client startup (default: 1 when no -debug)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Signing transaction failed</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Specify connection timeout in milliseconds (default: 5000)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Start Bitcoin Core Daemon</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>System error: </source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Transaction amount too small</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Transaction amounts must be positive</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Transaction too large</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Use UPnP to map the listening port (default: 0)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Use UPnP to map the listening port (default: 1 when listening)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Username for JSON-RPC connections</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Warning</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Warning: This version is obsolete, upgrade required!</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Zapping all transactions from wallet...</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>on startup</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>version</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>wallet.dat corrupt, salvage failed</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Password for JSON-RPC connections</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Allow JSON-RPC connections from specified IP address</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Send commands to node running on &lt;ip&gt; (default: 127.0.0.1)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Execute command when the best block changes (%s in cmd is replaced by block hash)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Upgrade wallet to latest format</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Set key pool size to &lt;n&gt; (default: 100)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Rescan the block chain for missing wallet transactions</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Use OpenSSL (https) for JSON-RPC connections</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Server certificate file (default: server.cert)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Server private key (default: server.pem)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>This help message</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Unable to bind to %s on this computer (bind returned error %d, %s)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Allow DNS lookups for -addnode, -seednode and -connect</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Loading addresses...</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Error loading wallet.dat: Wallet corrupted</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Bitcoin</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Wallet needed to be rewritten: restart Bitcoin to complete</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Error loading wallet.dat</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Invalid -proxy address: &apos;%s&apos;</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Unknown network specified in -onlynet: &apos;%s&apos;</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Unknown -socks proxy version requested: %i</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Cannot resolve -bind address: &apos;%s&apos;</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Cannot resolve -externalip address: &apos;%s&apos;</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Invalid amount for -paytxfee=&lt;amount&gt;: &apos;%s&apos;</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Invalid amount</source>
-        <translation type="unfinished"/>
+        <source>Done loading</source>
+        <translation type="unfinished">Юклаш тайёр</translation>
     </message>
     <message>
         <source>Insufficient funds</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Кам миқдор</translation>
     </message>
     <message>
-        <source>Loading block index...</source>
-        <translation type="unfinished"/>
+        <source>Unable to start HTTP server. See debug log for details.</source>
+        <translation type="unfinished">HTTP serverni ishga tushirib bo'lmadi. Tafsilotlar uchun disk raskadrovka jurnaliga qarang.</translation>
     </message>
     <message>
-        <source>Add a node to connect to and attempt to keep the connection open</source>
-        <translation type="unfinished"/>
+        <source>Verifying blocks…</source>
+        <translation type="unfinished">Bloklar tekshirilmoqda…</translation>
     </message>
     <message>
-        <source>Loading wallet...</source>
-        <translation type="unfinished"/>
+        <source>Verifying wallet(s)…</source>
+        <translation type="unfinished">Hamyon(lar) tekshirilmoqda…</translation>
     </message>
     <message>
-        <source>Cannot downgrade wallet</source>
-        <translation type="unfinished"/>
+        <source>Wallet needed to be rewritten: restart %s to complete</source>
+        <translation type="unfinished">Hamyonni qayta yozish kerak: bajarish uchun 1%s ni qayta ishga tushiring</translation>
     </message>
     <message>
-        <source>Cannot write default address</source>
-        <translation type="unfinished"/>
+        <source>Settings file could not be read</source>
+        <translation type="unfinished">Sozlamalar fayli o'qishga yaroqsiz</translation>
     </message>
     <message>
-        <source>Rescanning...</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Done loading</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>To use the %s option</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Error</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>You must set rpcpassword=&lt;password&gt; in the configuration file:
-%s
-If the file does not exist, create it with owner-readable-only file permissions.</source>
-        <translation type="unfinished"/>
+        <source>Settings file could not be written</source>
+        <translation type="unfinished">Sozlamalar fayli yaratish uchun yaroqsiz</translation>
     </message>
 </context>
 </TS>

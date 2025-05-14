@@ -1,555 +1,208 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
-// Copyright (c) 2009-2014 The Bitcoin developers
-// Distributed under the MIT/X11 software license, see the accompanying
+// Copyright (c) 2009-present The Bitcoin Core developers
+// Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #ifndef BITCOIN_UINT256_H
 #define BITCOIN_UINT256_H
 
-#include <assert.h>
-#include <stdexcept>
-#include <stdint.h>
-#include <stdio.h>
+#include <crypto/common.h>
+#include <span.h>
+#include <util/strencodings.h>
+#include <util/string.h>
+
+#include <algorithm>
+#include <array>
+#include <cassert>
+#include <cstdint>
+#include <cstring>
+#include <optional>
 #include <string>
-#include <string.h>
-#include <vector>
+#include <string_view>
 
-extern const signed char p_util_hexdigit[256]; // defined in util.cpp
-
-inline signed char HexDigit(char c)
+/** Template base class for fixed-sized opaque blobs. */
+template<unsigned int BITS>
+class base_blob
 {
-    return p_util_hexdigit[(unsigned char)c];
+protected:
+    static constexpr int WIDTH = BITS / 8;
+    static_assert(BITS % 8 == 0, "base_blob currently only supports whole bytes.");
+    std::array<uint8_t, WIDTH> m_data;
+    static_assert(WIDTH == sizeof(m_data), "Sanity check");
+
+public:
+    /* construct 0 value by default */
+    constexpr base_blob() : m_data() {}
+
+    /* constructor for constants between 1 and 255 */
+    constexpr explicit base_blob(uint8_t v) : m_data{v} {}
+
+    constexpr explicit base_blob(std::span<const unsigned char> vch)
+    {
+        assert(vch.size() == WIDTH);
+        std::copy(vch.begin(), vch.end(), m_data.begin());
+    }
+
+    consteval explicit base_blob(std::string_view hex_str);
+
+    constexpr bool IsNull() const
+    {
+        return std::all_of(m_data.begin(), m_data.end(), [](uint8_t val) {
+            return val == 0;
+        });
+    }
+
+    constexpr void SetNull()
+    {
+        std::fill(m_data.begin(), m_data.end(), 0);
+    }
+
+    /** Lexicographic ordering
+     * @note Does NOT match the ordering on the corresponding \ref
+     *       base_uint::CompareTo, which starts comparing from the end.
+     */
+    constexpr int Compare(const base_blob& other) const { return std::memcmp(m_data.data(), other.m_data.data(), WIDTH); }
+
+    friend constexpr bool operator==(const base_blob& a, const base_blob& b) { return a.Compare(b) == 0; }
+    friend constexpr bool operator!=(const base_blob& a, const base_blob& b) { return a.Compare(b) != 0; }
+    friend constexpr bool operator<(const base_blob& a, const base_blob& b) { return a.Compare(b) < 0; }
+
+    /** @name Hex representation
+     *
+     * The hex representation used by GetHex(), ToString(), and FromHex()
+     * is unusual, since it shows bytes of the base_blob in reverse order.
+     * For example, a 4-byte blob {0x12, 0x34, 0x56, 0x78} is represented
+     * as "78563412" instead of the more typical "12345678" representation
+     * that would be shown in a hex editor or used by typical
+     * byte-array / hex conversion functions like python's bytes.hex() and
+     * bytes.fromhex().
+     *
+     * The nice thing about the reverse-byte representation, even though it is
+     * unusual, is that if a blob contains an arithmetic number in little endian
+     * format (with least significant bytes first, and most significant bytes
+     * last), the GetHex() output will match the way the number would normally
+     * be written in base-16 (with most significant digits first and least
+     * significant digits last).
+     *
+     * This means, for example, that ArithToUint256(num).GetHex() can be used to
+     * display an arith_uint256 num value as a number, because
+     * ArithToUint256() converts the number to a blob in little-endian format,
+     * so the arith_uint256 class doesn't need to have its own number parsing
+     * and formatting functions.
+     *
+     * @{*/
+    std::string GetHex() const;
+    std::string ToString() const;
+    /**@}*/
+
+    constexpr const unsigned char* data() const { return m_data.data(); }
+    constexpr unsigned char* data() { return m_data.data(); }
+
+    constexpr unsigned char* begin() { return m_data.data(); }
+    constexpr unsigned char* end() { return m_data.data() + WIDTH; }
+
+    constexpr const unsigned char* begin() const { return m_data.data(); }
+    constexpr const unsigned char* end() const { return m_data.data() + WIDTH; }
+
+    static constexpr unsigned int size() { return WIDTH; }
+
+    constexpr uint64_t GetUint64(int pos) const { return ReadLE64(m_data.data() + pos * 8); }
+
+    template<typename Stream>
+    void Serialize(Stream& s) const
+    {
+        s << std::span(m_data);
+    }
+
+    template<typename Stream>
+    void Unserialize(Stream& s)
+    {
+        s.read(MakeWritableByteSpan(m_data));
+    }
+};
+
+template <unsigned int BITS>
+consteval base_blob<BITS>::base_blob(std::string_view hex_str)
+{
+    if (hex_str.length() != m_data.size() * 2) throw "Hex string must fit exactly";
+    auto str_it = hex_str.rbegin();
+    for (auto& elem : m_data) {
+        auto lo = util::ConstevalHexDigit(*(str_it++));
+        elem = (util::ConstevalHexDigit(*(str_it++)) << 4) | lo;
+    }
 }
 
-class uint_error : public std::runtime_error {
-public:
-    explicit uint_error(const std::string& str) : std::runtime_error(str) {}
-};
-
-/** Template base class for unsigned big integers. */
-template<unsigned int BITS>
-class base_uint
+namespace detail {
+/**
+ * Writes the hex string (in reverse byte order) into a new uintN_t object
+ * and only returns a value iff all of the checks pass:
+ *   - Input length is uintN_t::size()*2
+ *   - All characters are hex
+ */
+template <class uintN_t>
+std::optional<uintN_t> FromHex(std::string_view str)
 {
-private:
-    enum { WIDTH=BITS/32 };
-    uint32_t pn[WIDTH];
+    if (uintN_t::size() * 2 != str.size() || !IsHex(str)) return std::nullopt;
+    uintN_t rv;
+    unsigned char* p1 = rv.begin();
+    unsigned char* pend = rv.end();
+    size_t digits = str.size();
+    while (digits > 0 && p1 < pend) {
+        *p1 = ::HexDigit(str[--digits]);
+        if (digits > 0) {
+            *p1 |= ((unsigned char)::HexDigit(str[--digits]) << 4);
+            p1++;
+        }
+    }
+    return rv;
+}
+/**
+ * @brief Like FromHex(std::string_view str), but allows an "0x" prefix
+ *        and pads the input with leading zeroes if it is shorter than
+ *        the expected length of uintN_t::size()*2.
+ *
+ *        Designed to be used when dealing with user input.
+ */
+template <class uintN_t>
+std::optional<uintN_t> FromUserHex(std::string_view input)
+{
+    input = util::RemovePrefixView(input, "0x");
+    constexpr auto expected_size{uintN_t::size() * 2};
+    if (input.size() < expected_size) {
+        auto padded = std::string(expected_size, '0');
+        std::copy(input.begin(), input.end(), padded.begin() + expected_size - input.size());
+        return FromHex<uintN_t>(padded);
+    }
+    return FromHex<uintN_t>(input);
+}
+} // namespace detail
+
+/** 160-bit opaque blob.
+ * @note This type is called uint160 for historical reasons only. It is an opaque
+ * blob of 160 bits and has no integer operations.
+ */
+class uint160 : public base_blob<160> {
 public:
-
-    base_uint()
-    {
-        for (int i = 0; i < WIDTH; i++)
-            pn[i] = 0;
-    }
-
-    base_uint(const base_uint& b)
-    {
-        for (int i = 0; i < WIDTH; i++)
-            pn[i] = b.pn[i];
-    }
-
-    base_uint& operator=(const base_uint& b)
-    {
-        for (int i = 0; i < WIDTH; i++)
-            pn[i] = b.pn[i];
-        return *this;
-    }
-
-    base_uint(uint64_t b)
-    {
-        pn[0] = (unsigned int)b;
-        pn[1] = (unsigned int)(b >> 32);
-        for (int i = 2; i < WIDTH; i++)
-            pn[i] = 0;
-    }
-
-    explicit base_uint(const std::string& str)
-    {
-        SetHex(str);
-    }
-
-    explicit base_uint(const std::vector<unsigned char>& vch)
-    {
-        if (vch.size() != sizeof(pn))
-            throw uint_error("Converting vector of wrong size to base_uint");
-        memcpy(pn, &vch[0], sizeof(pn));
-    }
-
-    bool operator!() const
-    {
-        for (int i = 0; i < WIDTH; i++)
-            if (pn[i] != 0)
-                return false;
-        return true;
-    }
-
-    const base_uint operator~() const
-    {
-        base_uint ret;
-        for (int i = 0; i < WIDTH; i++)
-            ret.pn[i] = ~pn[i];
-        return ret;
-    }
-
-    const base_uint operator-() const
-    {
-        base_uint ret;
-        for (int i = 0; i < WIDTH; i++)
-            ret.pn[i] = ~pn[i];
-        ret++;
-        return ret;
-    }
-
-    double getdouble() const
-    {
-        double ret = 0.0;
-        double fact = 1.0;
-        for (int i = 0; i < WIDTH; i++) {
-            ret += fact * pn[i];
-            fact *= 4294967296.0;
-        }
-        return ret;
-    }
-
-    base_uint& operator=(uint64_t b)
-    {
-        pn[0] = (unsigned int)b;
-        pn[1] = (unsigned int)(b >> 32);
-        for (int i = 2; i < WIDTH; i++)
-            pn[i] = 0;
-        return *this;
-    }
-
-    base_uint& operator^=(const base_uint& b)
-    {
-        for (int i = 0; i < WIDTH; i++)
-            pn[i] ^= b.pn[i];
-        return *this;
-    }
-
-    base_uint& operator&=(const base_uint& b)
-    {
-        for (int i = 0; i < WIDTH; i++)
-            pn[i] &= b.pn[i];
-        return *this;
-    }
-
-    base_uint& operator|=(const base_uint& b)
-    {
-        for (int i = 0; i < WIDTH; i++)
-            pn[i] |= b.pn[i];
-        return *this;
-    }
-
-    base_uint& operator^=(uint64_t b)
-    {
-        pn[0] ^= (unsigned int)b;
-        pn[1] ^= (unsigned int)(b >> 32);
-        return *this;
-    }
-
-    base_uint& operator|=(uint64_t b)
-    {
-        pn[0] |= (unsigned int)b;
-        pn[1] |= (unsigned int)(b >> 32);
-        return *this;
-    }
-
-    base_uint& operator<<=(unsigned int shift)
-    {
-        base_uint a(*this);
-        for (int i = 0; i < WIDTH; i++)
-            pn[i] = 0;
-        int k = shift / 32;
-        shift = shift % 32;
-        for (int i = 0; i < WIDTH; i++)
-        {
-            if (i+k+1 < WIDTH && shift != 0)
-                pn[i+k+1] |= (a.pn[i] >> (32-shift));
-            if (i+k < WIDTH)
-                pn[i+k] |= (a.pn[i] << shift);
-        }
-        return *this;
-    }
-
-    base_uint& operator>>=(unsigned int shift)
-    {
-        base_uint a(*this);
-        for (int i = 0; i < WIDTH; i++)
-            pn[i] = 0;
-        int k = shift / 32;
-        shift = shift % 32;
-        for (int i = 0; i < WIDTH; i++)
-        {
-            if (i-k-1 >= 0 && shift != 0)
-                pn[i-k-1] |= (a.pn[i] << (32-shift));
-            if (i-k >= 0)
-                pn[i-k] |= (a.pn[i] >> shift);
-        }
-        return *this;
-    }
-
-    base_uint& operator+=(const base_uint& b)
-    {
-        uint64_t carry = 0;
-        for (int i = 0; i < WIDTH; i++)
-        {
-            uint64_t n = carry + pn[i] + b.pn[i];
-            pn[i] = n & 0xffffffff;
-            carry = n >> 32;
-        }
-        return *this;
-    }
-
-    base_uint& operator-=(const base_uint& b)
-    {
-        *this += -b;
-        return *this;
-    }
-
-    base_uint& operator+=(uint64_t b64)
-    {
-        base_uint b;
-        b = b64;
-        *this += b;
-        return *this;
-    }
-
-    base_uint& operator-=(uint64_t b64)
-    {
-        base_uint b;
-        b = b64;
-        *this += -b;
-        return *this;
-    }
-
-    base_uint& operator*=(uint32_t b32)
-    {
-        uint64_t carry = 0;
-        for (int i = 0; i < WIDTH; i++)
-        {
-            uint64_t n = carry + (uint64_t)b32 * pn[i];
-            pn[i] = n & 0xffffffff;
-            carry = n >> 32;
-        }
-        return *this;
-    }
-
-    base_uint& operator*=(const base_uint& b)
-    {
-        base_uint a = *this;
-        *this = 0;
-        for (int j = 0; j < WIDTH; j++) {
-            uint64_t carry = 0;
-            for (int i = 0; i + j < WIDTH; i++) {
-                uint64_t n = carry + pn[i + j] + (uint64_t)a.pn[j] * b.pn[i];
-                pn[i + j] = n & 0xffffffff;
-                carry = n >> 32;
-            }
-        }
-        return *this;
-    }
-
-    base_uint& operator/=(const base_uint& b)
-    {
-        base_uint div = b; // make a copy, so we can shift.
-        base_uint num = *this; // make a copy, so we can subtract.
-        *this = 0; // the quotient.
-        int num_bits = num.bits();
-        int div_bits = div.bits();
-        if (div_bits == 0)
-            throw uint_error("Division by zero");
-        if (div_bits > num_bits) // the result is certainly 0.
-            return *this;
-        int shift = num_bits - div_bits;
-        div <<= shift; // shift so that div and nun align.
-        while (shift >= 0) {
-            if (num >= div) {
-                num -= div;
-                pn[shift / 32] |= (1 << (shift & 31)); // set a bit of the result.
-            }
-            div >>= 1; // shift back.
-            shift--;
-        }
-        // num now contains the remainder of the division.
-        return *this;
-    }
-
-    base_uint& operator++()
-    {
-        // prefix operator
-        int i = 0;
-        while (++pn[i] == 0 && i < WIDTH-1)
-            i++;
-        return *this;
-    }
-
-    const base_uint operator++(int)
-    {
-        // postfix operator
-        const base_uint ret = *this;
-        ++(*this);
-        return ret;
-    }
-
-    base_uint& operator--()
-    {
-        // prefix operator
-        int i = 0;
-        while (--pn[i] == (uint32_t)-1 && i < WIDTH-1)
-            i++;
-        return *this;
-    }
-
-    const base_uint operator--(int)
-    {
-        // postfix operator
-        const base_uint ret = *this;
-        --(*this);
-        return ret;
-    }
-
-    int CompareTo(const base_uint& b) const {
-        for (int i = base_uint::WIDTH-1; i >= 0; i--) {
-            if (pn[i] < b.pn[i])
-                return -1;
-            if (pn[i] > b.pn[i])
-                return 1;
-        }
-        return 0;
-    }
-
-    bool EqualTo(uint64_t b) const {
-        for (int i = base_uint::WIDTH-1; i >= 2; i--) {
-            if (pn[i])
-                return false;
-        }
-        if (pn[1] != (b >> 32))
-            return false;
-        if (pn[0] != (b & 0xfffffffful))
-            return false;
-        return true;
-    }
-
-    friend inline const base_uint operator+(const base_uint& a, const base_uint& b) { return base_uint(a) += b; }
-    friend inline const base_uint operator-(const base_uint& a, const base_uint& b) { return base_uint(a) -= b; }
-    friend inline const base_uint operator*(const base_uint& a, const base_uint& b) { return base_uint(a) *= b; }
-    friend inline const base_uint operator/(const base_uint& a, const base_uint& b) { return base_uint(a) /= b; }
-    friend inline const base_uint operator|(const base_uint& a, const base_uint& b) { return base_uint(a) |= b; }
-    friend inline const base_uint operator&(const base_uint& a, const base_uint& b) { return base_uint(a) &= b; }
-    friend inline const base_uint operator^(const base_uint& a, const base_uint& b) { return base_uint(a) ^= b; }
-    friend inline const base_uint operator>>(const base_uint& a, int shift) { return base_uint(a) >>= shift; }
-    friend inline const base_uint operator<<(const base_uint& a, int shift) { return base_uint(a) <<= shift; }
-    friend inline const base_uint operator*(const base_uint& a, uint32_t b) { return base_uint(a) *= b; }
-    friend inline bool operator==(const base_uint& a, const base_uint& b) { return a.CompareTo(b) == 0; }
-    friend inline bool operator!=(const base_uint& a, const base_uint& b) { return a.CompareTo(b) != 0; }
-    friend inline bool operator>(const base_uint& a, const base_uint& b) { return a.CompareTo(b) > 0; }
-    friend inline bool operator<(const base_uint& a, const base_uint& b) { return a.CompareTo(b) < 0; }
-    friend inline bool operator>=(const base_uint& a, const base_uint& b) { return a.CompareTo(b) >= 0; }
-    friend inline bool operator<=(const base_uint& a, const base_uint& b) { return a.CompareTo(b) <= 0; }
-    friend inline bool operator==(const base_uint& a, uint64_t b) { return a.EqualTo(b); }
-    friend inline bool operator!=(const base_uint& a, uint64_t b) { return !a.EqualTo(b); }
-
-    std::string GetHex() const
-    {
-        char psz[sizeof(pn)*2 + 1];
-        for (unsigned int i = 0; i < sizeof(pn); i++)
-            sprintf(psz + i*2, "%02x", ((unsigned char*)pn)[sizeof(pn) - i - 1]);
-        return std::string(psz, psz + sizeof(pn)*2);
-    }
-
-    void SetHex(const char* psz)
-    {
-        memset(pn,0,sizeof(pn));
-
-        // skip leading spaces
-        while (isspace(*psz))
-            psz++;
-
-        // skip 0x
-        if (psz[0] == '0' && tolower(psz[1]) == 'x')
-            psz += 2;
-
-        // hex string to uint
-        const char* pbegin = psz;
-        while (::HexDigit(*psz) != -1)
-            psz++;
-        psz--;
-        unsigned char* p1 = (unsigned char*)pn;
-        unsigned char* pend = p1 + WIDTH * 4;
-        while (psz >= pbegin && p1 < pend)
-        {
-            *p1 = ::HexDigit(*psz--);
-            if (psz >= pbegin)
-            {
-                *p1 |= ((unsigned char)::HexDigit(*psz--) << 4);
-                p1++;
-            }
-        }
-    }
-
-    void SetHex(const std::string& str)
-    {
-        SetHex(str.c_str());
-    }
-
-    std::string ToString() const
-    {
-        return (GetHex());
-    }
-
-    unsigned char* begin()
-    {
-        return (unsigned char*)&pn[0];
-    }
-
-    unsigned char* end()
-    {
-        return (unsigned char*)&pn[WIDTH];
-    }
-
-    const unsigned char* begin() const
-    {
-        return (unsigned char*)&pn[0];
-    }
-
-    const unsigned char* end() const
-    {
-        return (unsigned char*)&pn[WIDTH];
-    }
-
-    unsigned int size() const
-    {
-        return sizeof(pn);
-    }
-
-    // Returns the position of the highest bit set plus one, or zero if the
-    // value is zero.
-    unsigned int bits() const
-    {
-        for (int pos = WIDTH-1; pos >= 0; pos--) {
-            if (pn[pos]) {
-                for (int bits = 31; bits > 0; bits--) {
-                    if (pn[pos] & 1<<bits)
-                        return 32*pos + bits + 1;
-                }
-                return 32*pos + 1;
-            }
-        }
-        return 0;
-    }
-
-    uint64_t GetLow64() const
-    {
-        assert(WIDTH >= 2);
-        return pn[0] | (uint64_t)pn[1] << 32;
-    }
-
-    unsigned int GetSerializeSize(int nType, int nVersion) const
-    {
-        return sizeof(pn);
-    }
-
-    template<typename Stream>
-    void Serialize(Stream& s, int nType, int nVersion) const
-    {
-        s.write((char*)pn, sizeof(pn));
-    }
-
-    template<typename Stream>
-    void Unserialize(Stream& s, int nType, int nVersion)
-    {
-        s.read((char*)pn, sizeof(pn));
-    }
+    static std::optional<uint160> FromHex(std::string_view str) { return detail::FromHex<uint160>(str); }
+    constexpr uint160() = default;
+    constexpr explicit uint160(std::span<const unsigned char> vch) : base_blob<160>(vch) {}
 };
 
-/** 160-bit unsigned big integer. */
-class uint160 : public base_uint<160> {
+/** 256-bit opaque blob.
+ * @note This type is called uint256 for historical reasons only. It is an
+ * opaque blob of 256 bits and has no integer operations. Use arith_uint256 if
+ * those are required.
+ */
+class uint256 : public base_blob<256> {
 public:
-    uint160() {}
-    uint160(const base_uint<160>& b) : base_uint<160>(b) {}
-    uint160(uint64_t b) : base_uint<160>(b) {}
-    explicit uint160(const std::string& str) : base_uint<160>(str) {}
-    explicit uint160(const std::vector<unsigned char>& vch) : base_uint<160>(vch) {}
+    static std::optional<uint256> FromHex(std::string_view str) { return detail::FromHex<uint256>(str); }
+    static std::optional<uint256> FromUserHex(std::string_view str) { return detail::FromUserHex<uint256>(str); }
+    constexpr uint256() = default;
+    consteval explicit uint256(std::string_view hex_str) : base_blob<256>(hex_str) {}
+    constexpr explicit uint256(uint8_t v) : base_blob<256>(v) {}
+    constexpr explicit uint256(std::span<const unsigned char> vch) : base_blob<256>(vch) {}
+    static const uint256 ZERO;
+    static const uint256 ONE;
 };
 
-/** 256-bit unsigned big integer. */
-class uint256 : public base_uint<256> {
-public:
-    uint256() {}
-    uint256(const base_uint<256>& b) : base_uint<256>(b) {}
-    uint256(uint64_t b) : base_uint<256>(b) {}
-    explicit uint256(const std::string& str) : base_uint<256>(str) {}
-    explicit uint256(const std::vector<unsigned char>& vch) : base_uint<256>(vch) {}
-
-    // The "compact" format is a representation of a whole
-    // number N using an unsigned 32bit number similar to a
-    // floating point format.
-    // The most significant 8 bits are the unsigned exponent of base 256.
-    // This exponent can be thought of as "number of bytes of N".
-    // The lower 23 bits are the mantissa.
-    // Bit number 24 (0x800000) represents the sign of N.
-    // N = (-1^sign) * mantissa * 256^(exponent-3)
-    //
-    // Satoshi's original implementation used BN_bn2mpi() and BN_mpi2bn().
-    // MPI uses the most significant bit of the first byte as sign.
-    // Thus 0x1234560000 is compact (0x05123456)
-    // and  0xc0de000000 is compact (0x0600c0de)
-    // (0x05c0de00) would be -0x40de000000
-    //
-    // Bitcoin only uses this "compact" format for encoding difficulty
-    // targets, which are unsigned 256bit quantities.  Thus, all the
-    // complexities of the sign bit and using base 256 are probably an
-    // implementation accident.
-    //
-    // This implementation directly uses shifts instead of going
-    // through an intermediate MPI representation.
-    uint256& SetCompact(uint32_t nCompact, bool *pfNegative = NULL, bool *pfOverflow = NULL)
-    {
-        int nSize = nCompact >> 24;
-        uint32_t nWord = nCompact & 0x007fffff;
-        if (nSize <= 3)
-        {
-            nWord >>= 8*(3-nSize);
-            *this = nWord;
-        }
-        else
-        {
-            *this = nWord;
-            *this <<= 8*(nSize-3);
-        }
-        if (pfNegative)
-            *pfNegative = nWord != 0 && (nCompact & 0x00800000) != 0;
-        if (pfOverflow)
-            *pfOverflow = nWord != 0 && ((nSize > 34) ||
-                                         (nWord > 0xff && nSize > 33) ||
-                                         (nWord > 0xffff && nSize > 32));
-        return *this;
-    }
-
-    uint32_t GetCompact(bool fNegative = false) const
-    {
-        int nSize = (bits() + 7) / 8;
-        uint32_t nCompact = 0;
-        if (nSize <= 3)
-            nCompact = GetLow64() << 8*(3-nSize);
-        else
-        {
-            uint256 bn = *this >> 8*(nSize-3);
-            nCompact = bn.GetLow64();
-        }
-        // The 0x00800000 bit denotes the sign.
-        // Thus, if it is already set, divide the mantissa by 256 and increase the exponent.
-        if (nCompact & 0x00800000)
-        {
-            nCompact >>= 8;
-            nSize++;
-        }
-        assert((nCompact & ~0x007fffff) == 0);
-        assert(nSize < 256);
-        nCompact |= nSize << 24;
-        nCompact |= (fNegative && (nCompact & 0x007fffff) ? 0x00800000 : 0);
-        return nCompact;
-    }
-};
-
-#endif
+#endif // BITCOIN_UINT256_H

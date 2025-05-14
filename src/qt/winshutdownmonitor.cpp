@@ -1,11 +1,10 @@
-// Copyright (c) 2014 The Bitcoin developers
-// Distributed under the MIT/X11 software license, see the accompanying
+// Copyright (c) 2014-2019 The Bitcoin Core developers
+// Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "winshutdownmonitor.h"
+#include <qt/winshutdownmonitor.h>
 
-#if defined(Q_OS_WIN) && QT_VERSION >= 0x050000
-#include "init.h"
+#if defined(Q_OS_WIN)
 
 #include <windows.h>
 
@@ -13,7 +12,7 @@
 
 // If we don't want a message to be processed by Qt, return true and set result to
 // the value that the window procedure should return. Otherwise return false.
-bool WinShutdownMonitor::nativeEventFilter(const QByteArray &eventType, void *pMessage, long *pnResult)
+bool WinShutdownMonitor::nativeEventFilter(const QByteArray &eventType, void *pMessage, qintptr *pnResult)
 {
        Q_UNUSED(eventType);
 
@@ -25,7 +24,7 @@ bool WinShutdownMonitor::nativeEventFilter(const QByteArray &eventType, void *pM
            {
                // Initiate a client shutdown after receiving a WM_QUERYENDSESSION and block
                // Windows session end until we have finished client shutdown.
-               StartShutdown();
+               m_shutdown_fn();
                *pnResult = FALSE;
                return true;
            }
@@ -43,15 +42,15 @@ bool WinShutdownMonitor::nativeEventFilter(const QByteArray &eventType, void *pM
 void WinShutdownMonitor::registerShutdownBlockReason(const QString& strReason, const HWND& mainWinId)
 {
     typedef BOOL (WINAPI *PSHUTDOWNBRCREATE)(HWND, LPCWSTR);
-    PSHUTDOWNBRCREATE shutdownBRCreate = (PSHUTDOWNBRCREATE)GetProcAddress(GetModuleHandleA("User32.dll"), "ShutdownBlockReasonCreate");
-    if (shutdownBRCreate == NULL) {
-        qDebug() << "registerShutdownBlockReason : GetProcAddress for ShutdownBlockReasonCreate failed";
+    PSHUTDOWNBRCREATE shutdownBRCreate = (PSHUTDOWNBRCREATE)(void*)GetProcAddress(GetModuleHandleA("User32.dll"), "ShutdownBlockReasonCreate");
+    if (shutdownBRCreate == nullptr) {
+        qWarning() << "registerShutdownBlockReason: GetProcAddress for ShutdownBlockReasonCreate failed";
         return;
     }
 
     if (shutdownBRCreate(mainWinId, strReason.toStdWString().c_str()))
-        qDebug() << "registerShutdownBlockReason : Successfully registered: " + strReason;
+        qInfo() << "registerShutdownBlockReason: Successfully registered: " + strReason;
     else
-        qDebug() << "registerShutdownBlockReason : Failed to register: " + strReason;
+        qWarning() << "registerShutdownBlockReason: Failed to register: " + strReason;
 }
 #endif
